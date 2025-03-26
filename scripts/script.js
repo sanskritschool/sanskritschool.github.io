@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 */
 
-let activeTooltip = null; // Track the currently active tooltip
+let activeTooltip = null; // Track active tooltip
 
 document.addEventListener("DOMContentLoaded", () => {
     const tooltipsContainer = document.getElementById('tooltips-container');
@@ -218,30 +218,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.target.appendChild(tooltip);
             }
 
+            // If another tooltip is open, close it first
             if (activeTooltip && activeTooltip !== tooltip) {
                 activeTooltip.classList.remove("active");
             }
 
+            // Toggle tooltip visibility
             const isVisible = tooltip.classList.contains("active");
             tooltip.classList.toggle("active", !isVisible);
 
+            // Update active tooltip reference
             activeTooltip = isVisible ? null : tooltip;
 
-            // Delay the outside click listener to avoid closing instantly
-            setTimeout(() => {
-                document.addEventListener("click", outsideClickHandler, { once: true });
-            }, 100);
+            // Prevent immediate closing issue
+            e.stopPropagation();
         }
     });
 
-    function outsideClickHandler(event) {
-        if (!event.target.closest(".tooltip-container")) {
-            if (activeTooltip) {
-                activeTooltip.classList.remove("active");
-                activeTooltip = null;
-            }
+    document.addEventListener("click", (event) => {
+        if (activeTooltip && !event.target.closest(".tooltip-container")) {
+            activeTooltip.classList.remove("active");
+            activeTooltip = null;
         }
-    }
+    });
 
     // Hover support for desktops
     tooltipsContainer.addEventListener("mouseenter", (e) => {
