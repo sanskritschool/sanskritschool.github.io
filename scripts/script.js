@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 */
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const tooltipsContainer = document.getElementById('tooltips-container');
 
@@ -64,6 +65,67 @@ document.addEventListener("DOMContentLoaded", () => {
             tooltip.classList.add("active");
         }
     }, true); // true: Capturing phase for hover to work before other events
+
+    tooltipsContainer.addEventListener("mouseleave", (e) => {
+        if (e.target && e.target.classList.contains("tooltip-container")) {
+            let tooltip = e.target.querySelector(".tooltip");
+            if (tooltip) tooltip.classList.remove("active");
+        }
+    }, true);
+});
+*/
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tooltipsContainer = document.getElementById('tooltips-container');
+
+    tooltipsContainer.addEventListener("click", (e) => {
+        if (e.target && e.target.classList.contains("tooltip-container")) {
+            let tooltip = e.target.querySelector(".tooltip");
+
+            // If tooltip doesn't exist, create it
+            if (!tooltip) {
+                tooltip = document.createElement("span");
+                tooltip.classList.add("tooltip");
+                tooltip.textContent = e.target.getAttribute("data-tooltip");
+                e.target.appendChild(tooltip);
+            }
+
+            // Toggle tooltip visibility
+            let isActive = tooltip.classList.contains("active");
+            document.querySelectorAll(".tooltip").forEach(t => t.classList.remove("active"));
+
+            if (!isActive) {
+                tooltip.classList.add("active");
+
+                // Delay attaching the outside click listener
+                setTimeout(() => {
+                    document.addEventListener("click", outsideClickHandler, { once: true });
+                }, 10);
+            }
+        }
+    });
+
+    function outsideClickHandler(event) {
+        if (!event.target.closest(".tooltip-container")) {
+            document.querySelectorAll(".tooltip").forEach(t => t.classList.remove("active"));
+        }
+    }
+
+    // Add hover events for desktops
+    tooltipsContainer.addEventListener("mouseenter", (e) => {
+        if (e.target && e.target.classList.contains("tooltip-container")) {
+            let tooltip = e.target.querySelector(".tooltip");
+
+            if (!tooltip) {
+                tooltip = document.createElement("span");
+                tooltip.classList.add("tooltip");
+                tooltip.textContent = e.target.getAttribute("data-tooltip");
+                e.target.appendChild(tooltip);
+            }
+
+            tooltip.classList.add("active");
+        }
+    }, true);
 
     tooltipsContainer.addEventListener("mouseleave", (e) => {
         if (e.target && e.target.classList.contains("tooltip-container")) {
