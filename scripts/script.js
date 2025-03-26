@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 */
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const tooltipsContainer = document.getElementById('tooltips-container');
 
@@ -194,6 +195,73 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tooltipsContainer.addEventListener("mouseleave", (e) => {
         if (e.target && e.target.classList.contains("tooltip-container")) {
+            let tooltip = e.target.querySelector(".tooltip");
+            if (tooltip) tooltip.classList.remove("active");
+        }
+    }, true);
+});
+*/
+
+let activeTooltip = null; // Track the currently active tooltip
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tooltipsContainer = document.getElementById('tooltips-container');
+
+    tooltipsContainer.addEventListener("click", (e) => {
+        if (e.target && e.target.classList.contains("tooltip-container")) {
+            let tooltip = e.target.querySelector(".tooltip");
+
+            if (!tooltip) {
+                tooltip = document.createElement("span");
+                tooltip.classList.add("tooltip");
+                tooltip.textContent = e.target.getAttribute("data-tooltip");
+                e.target.appendChild(tooltip);
+            }
+
+            if (activeTooltip && activeTooltip !== tooltip) {
+                activeTooltip.classList.remove("active");
+            }
+
+            const isVisible = tooltip.classList.contains("active");
+            tooltip.classList.toggle("active", !isVisible);
+
+            activeTooltip = isVisible ? null : tooltip;
+
+            // Delay the outside click listener to avoid closing instantly
+            setTimeout(() => {
+                document.addEventListener("click", outsideClickHandler, { once: true });
+            }, 100);
+        }
+    });
+
+    function outsideClickHandler(event) {
+        if (!event.target.closest(".tooltip-container")) {
+            if (activeTooltip) {
+                activeTooltip.classList.remove("active");
+                activeTooltip = null;
+            }
+        }
+    }
+
+    // Hover support for desktops
+    tooltipsContainer.addEventListener("mouseenter", (e) => {
+        if (e.target.classList.contains("tooltip-container")) {
+            let tooltip = e.target.querySelector(".tooltip");
+
+            if (!tooltip) {
+                tooltip = document.createElement("span");
+                tooltip.classList.add("tooltip");
+                tooltip.textContent = e.target.getAttribute("data-tooltip");
+                e.target.appendChild(tooltip);
+            }
+
+            tooltip.classList.add("active");
+            activeTooltip = tooltip;
+        }
+    }, true);
+
+    tooltipsContainer.addEventListener("mouseleave", (e) => {
+        if (e.target.classList.contains("tooltip-container")) {
             let tooltip = e.target.querySelector(".tooltip");
             if (tooltip) tooltip.classList.remove("active");
         }
