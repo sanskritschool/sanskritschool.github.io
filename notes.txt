@@ -1,3 +1,44 @@
 TODO
 1. Add full list of 2200 dhatus
 2. Add Gita
+3. In all pages, set the correct title and SEO tags
+
+URLs
+
+Navigation Bars
+https://www.w3schools.com/css/css_navbar.asp
+
+How TO - Responsive Top Navigation
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+
+          ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                width: 200px;
+                background-color: #f1f1f1;
+                border: 1px solid #555;
+            }
+            li a {
+                display: block;
+                padding: 8px 16px;
+                color: #000;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #555;
+                color: white;
+            }
+            li a.active {
+                background-color: #04aa6d;
+                color: white;
+            }
+
+            li {
+                text-align: center;
+                border-bottom: 1px solid #555;
+            }
+
+            li:last-child {
+                border-bottom: none;
+            }

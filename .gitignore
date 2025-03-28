@@ -1,0 +1,28 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor and IDE files
+*.swp
+*.swo
+*.sublime-workspace
+*.vscode/
+
+# Logs and cache
+*.log
+*.cache
+
+# Temporary files
+*.tmp
+*.bak
+
+# Environment variables and secrets
+.env
+.env.local
+
+# Other ignored files
+Thumbs.db
+*.bak
+*.old
+
