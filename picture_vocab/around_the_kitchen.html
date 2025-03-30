@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/image_viewer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../scripts/script.js"></script>
+  </head>
+  <body>
+    <!-- navigation menu -->
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html" class="active">Home</a>
+      <a href="../english/stories.html">Stories</a>
+      <a href="../english/vocab.html">Vocabulary</a>
+      <a href="../english/grammar.html">Grammar</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_func()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- end navigation menu -->
+
+    <div class="margin">This is the page to show picture vocab</div>
+    <!-- <div class="margin"> -->
+
+    <!-- image viewer -->
+    <div id="imageViewer" class="viewer">
+      <span class="close" onclick="closeViewer()">&times;</span>
+      <img id="viewerImage" />
+      <p id="viewerCaption"></p>
+      <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+      <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="../scripts/image_viewer.js"></script>
+
+    <!-- end image viewer -->
+  </body>
+</html>

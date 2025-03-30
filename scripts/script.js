@@ -210,3 +210,6 @@ function nav_func() {
       x.className = "topnav";
     }
 }
+
+/* prevent users from copying text and images */
+document.addEventListener("contextmenu", (event) => event.preventDefault());

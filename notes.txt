@@ -2,6 +2,10 @@ TODO
 1. Add full list of 2200 dhatus
 2. Add Gita
 3. In all pages, set the correct title and SEO tags
+4. Add settings option for color and font size
+5. In stories, tooltip should be left aligned on left side and
+   right aligned on right side
+6. Add visitor counter
 
 URLs
 
@@ -42,3 +46,4 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
             li:last-child {
                 border-bottom: none;
             }
+
