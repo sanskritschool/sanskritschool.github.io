@@ -20,7 +20,7 @@ body {
 
 .viewer img {
     width: 384px;  /* Set a fixed width */
-    height: 384px;  /* Maintain aspect ratio */
+    height: auto;  /* Maintain aspect ratio */
     max-width: 80%; /* Ensure responsiveness */
     max-height: 70vh; /* Prevent oversized images */
     border-radius: 15px;
