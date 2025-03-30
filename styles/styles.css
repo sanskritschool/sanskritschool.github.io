@@ -216,3 +216,18 @@ div.margin {
 .url-no-underline:hover {
   color: #ff7e5f; /* Custom hover color */
 }
+
+/* for numbered list items, e.g used in vocabulary */
+.num-list {
+  line-height: 1.5;
+}
+
+/* for a used in numbered lists, e.g used in vocabulary */
+.a-no-deco {
+  text-decoration: none;
+  color: inherit;
+}
+
+.a-no-deco:hover {
+  color: #ff7e5f; /* Custom hover color */
+}
