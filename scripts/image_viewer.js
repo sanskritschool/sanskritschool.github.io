@@ -31,6 +31,7 @@ function changeImage(step) {
 // Function to close the viewer
 function closeViewer() {
     viewer.style.display = "none";
+    window.close();
 }
 
 // Automatically load the first image when the page loads
