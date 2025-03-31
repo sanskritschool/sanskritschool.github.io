@@ -17,3 +17,14 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 
 
 https://www.chandamamastories.com/copyright-disclaimer/
+
+furniture
+house
+kitchen
+bathroom
+office
+school
+factory
+animals
+food
+vegetables

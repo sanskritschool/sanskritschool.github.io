@@ -1,5 +1,6 @@
 // Array of images and their captions
 let images = [
+    { src: "../images/vocab/kitchen/kitchen.png", caption: "kitchen" },
     { src: "../images/vocab/kitchen/knife.png", caption: "knife" },
     { src: "../images/vocab/kitchen/plate.png", caption: "plate" },
     { src: "../images/vocab/kitchen/spoon.png", caption: "spoon" },
