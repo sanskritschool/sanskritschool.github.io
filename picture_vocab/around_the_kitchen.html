@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beautiful Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/image_viewer.css" />
+    <link rel="stylesheet" href="../styles/play_button.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -36,6 +40,22 @@
       <p id="viewerCaption"></p>
       <button class="prev" onclick="changeImage(-1)">&#10094;</button>
       <button class="next" onclick="changeImage(1)">&#10095;</button>
+      <!-- <button id="playButton" onclick="playAudio()">▶️</button> -->
+
+      <!--
+      <button id="playButton" onclick="playAudio()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zm2.5 0c0 2.46-1.34 4.67-3.5 5.82v-1.9c1.16-.92 2-2.4 2-3.92s-.84-3-2-3.92V6.18c2.16 1.15 3.5 3.36 3.5 5.82z"/>
+        </svg>
+    </button>
+  -->
+
+  <button id="playButton" onclick="playAudio()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zm2.5 0c0 2.46-1.34 4.67-3.5 5.82v-1.9c1.16-.92 2-2.4 2-3.92s-.84-3-2-3.92V6.18c2.16 1.15 3.5 3.36 3.5 5.82z"/>
+    </svg>
+</button>
+
     </div>
 
     <script src="../scripts/image_viewer.js"></script>
