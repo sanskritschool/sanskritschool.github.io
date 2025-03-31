@@ -28,3 +28,40 @@ factory
 animals
 food
 vegetables
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+
+play audio css
+#playButton {
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 50%; /* Makes it circular */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /*box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);*/
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Change background on hover */
+#playButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Active (clicked) state */
+#playButton:active {
+    transform: scale(0.9);
+}
+
+/* Style the SVG icon */
+#playButton svg {
+    width: 80px;
+    height: 80px;
+    fill: white;
+}
+
+

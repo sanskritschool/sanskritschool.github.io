@@ -1,31 +1,18 @@
-#playButton {
-    background-color: #007bff; /* Blue background */
-    border: none;
-    border-radius: 50%; /* Makes it circular */
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Adds shadow */
-    transition: background 0.3s, transform 0.2s;
+.audio-button {
+    background-color: #007bff; /* Green background */
+    border: none; /* Remove the border */
+    border-radius: 50%; /* Make it circular */
+    padding: 8px; /* Adjust the size of the button */
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    cursor: pointer; /* Show a pointer when hovering */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-/* Change background on hover */
-#playButton:hover {
+.audio-button:hover {
     background-color: #0056b3;
-    transform: scale(1.1);
 }
 
-/* Active (clicked) state */
-#playButton:active {
-    transform: scale(0.9);
-}
-
-/* Style the SVG icon */
-#playButton svg {
-    width: 40px;
-    height: 40px;
-    fill: white; /* Ensures the icon is white */
+.audio-button:focus {
+    outline: none; /* Remove the default focus outline */
 }
