@@ -1,6 +1,6 @@
-This is the repo for Sanskrit School.
+This is the repo for Samskrut - A place to learn Samskrutam.
 
-It is a website for learing Sanskrit and will have: 
+It is a website for learing Sanskrit and will have:
 - stories in Sanskrit
 - vocabulary
 - Sanskrit grammer
