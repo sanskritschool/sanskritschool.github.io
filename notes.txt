@@ -7,6 +7,9 @@ TODO
    right aligned on right side
 6. Add visitor counter
 
+DNS: all resources must use https
+
+rename stories/chandamama to something else
 URLs
 
 Navigation Bars
@@ -31,37 +34,178 @@ vegetables
 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 
-play audio css
-#playButton {
-    background-color: #007bff; /* Blue background */
-    border: none;
-    border-radius: 50%; /* Makes it circular */
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    /*box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);*/
-    transition: background 0.3s, transform 0.2s;
-}
 
-/* Change background on hover */
-#playButton:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-}
-
-/* Active (clicked) state */
-#playButton:active {
-    transform: scale(0.9);
-}
-
-/* Style the SVG icon */
-#playButton svg {
-    width: 80px;
-    height: 80px;
-    fill: white;
-}
+sanskrit word : english word : gender : root
 
 
+aroudn the Kitchen
+-------------------
+
+तस्मिन (tasma) : Spoon : Masculine : तस् (tas)
+पात्रम् (pātram) : Vessel : Neuter : पात्र (pātra)
+वर्तिका (vartikā) : Roll : Feminine : वर्त (varta)
+तलम् (talam) : Pan : Neuter : तल (tala)
+चूलिका (cūlikā) : Stove : Feminine : चूल (cūla)
+कटोरा (kaṭorā) : Bowl : Masculine : कटोर (kaṭora)
+सङ्ग्राहकं (saṅgrāhakaṁ) : Grater : Neuter : सङ्ग्राहक (saṅgrāhaka)
+मणिकं (maṇikaṁ) : Tongs : Neuter : मणि (maṇi)
+द्रव्यपात्रम् (dravyapātram) : Measuring cup : Neuter : द्रव्य (dravya)
+रजतपात्रम् (rajatapātram) : Silver vessel : Neuter : रजत (rajata)
+पात्रिका (pātrikā) : Small plate : Feminine : पात्र (pātra)
+द्रव्यकण्ठी (dravyakaṇṭhī) : Ladle : Feminine : द्रव्य (dravya)
+पटकं (pātakaṁ) : Apron : Neuter : पट (paṭa)
+द्रव्यधारकं (dravyadhārakaṁ) : Pitcher : Neuter : द्रव्य (dravya)
+छद्मलिखनं (chadmalikhanaṁ) : Cutting board : Neuter : छद्म (chadma)
+स्मैला (smailā) : Sink : Feminine : स्मै (smai)
+मूलकयंत्रं (mūlakayantraṁ) : Mixer : Neuter : मूल (mūla)
+   पुस्तकम् (pustakam) : Cookbook : Neuter : पुस्तक (pustaka)
+गुड्कर्म (guḍkarma) : Food processor : Masculine : गुड (guḍ)
+मुक्तपत्रम् (muktapātram) : Strainer : Neuter : मुक्त (mukta)
+तप् (tap) : Tray : Masculine : तप (tapa)
+व्रणपात्रम् (vraṇapātram) : Kettle : Neuter : व्रण (vraṇa)
+आच्छादनं (ācchādanaṁ) : Lid : Neuter : आच्छाद (ācchāda)
+सायकं (sāyakaṁ) : Knife : Neuter : सायक (sāyaka)
+कलशः (kalaśaḥ) : Pitcher : Masculine : कलश (kalaśa)
+वर्तनं (vartanam) : Bowl : Neuter : वर्त (varta)
+पोषकधातु (poṣakadhātu) : Cooking utensil : Masculine : पोषक (poṣaka)
+नम्राणि (namrāṇi) : Napkin : Neuter : नम्र (namra)
+द्रव्यसूचकं (dravyasūcakaṁ) : Salt shaker : Neuter : द्रव्य (dravya)
+pepper shaker
+सद्रव्यकपाटं (sadravyakapāṭaṁ) : Refrigerator : Neuter : सद्रव्य (sadravya)
+ताम्रकं (tāmra) : Copper utensil : Neuter : ताम्र (tāmrā)
+कारिका (kārikā) : Mug : Feminine : कारी (kārī)
+विपद्रव्यं (vipadravyaṁ) : Fire extinguisher : Neuter : विपद्रव्य (vipadravya)
+द्रव्यपत्रं (dravyapatraṁ) : Tray : Neuter : द्रव्य (dravya)
+सूत्रकं (sūtrakā) : Strainer : Neuter : सूत्र (sūtra)
+तक्षकः (takṣakaḥ) : Griddle : Masculine : तक्ष (takṣa)
+कौशिकी (kauśikī) : Cloth : Feminine : कौशिक (kauśika)
+मणिकुंभं (maṇikuṁbhaṁ) : Jar : Neuter : मणि (maṇi)
+विहतपात्रं (vihatapātraṁ) : Colander : Neuter : विहत (vihat)
+ladle
+Cabinets
+Cutting boards
+Measuring cups
+Tongs
+Peeler
+Grater
+Colander
+Rolling pin
+cup
+saucer
+Dish soap
+Sponge / Scrubber
+Dish rack / Drying mat
+Trash can
+Paper towels
+Kitchen towels
+Broom and dustpan
+Cooking oil (olive oil, vegetable oil, etc.)
+Sugar
+Flour
+Coffee / Tea
+Bread
+Eggs
+Milk
+-------------------------------------------------------
+
+cutlery
+
+चाकु (chāku) : Knife : Neuter : चाकु (chāku)
+
+दंष्ट्रा (daṁṣṭrā) : Fork : Feminine : दंष्ट्र (daṁṣṭra)
+
+चम्मच (cammaca) : Spoon : Masculine : चमच (cama)
+
+पात्रकं (pātrakaṁ) : Ladle : Neuter : पात्र (pātra)
+
+चन्द्रपात्रम् (candra-pātram) : Dessert spoon : Neuter : चन्द्र (candra)
+
+धारा (dhārā) : Tongs : Feminine : धा (dhā)
+
+कटोरी (kaṭorī) : Small bowl (for cutlery) : Feminine : कटोर (kaṭora)
+
+वर्तिका (vartikā) : Serving spoon : Feminine : वर्त (varta)
+
+पत्त्रिका (pattrikā) : Plate (cutlery-related) : Feminine : पात्र (pātra)
+
+गह्वरकं (gahvarakaṁ) : Soup spoon : Neuter : गह्वर (gahvara)
+
+द्रव्यचषकं (dravyacaṣakaṁ) : Tea spoon : Neuter : द्रव्य (dravya)
+
+कष्णपात्रं (kaṣṇapātraṁ) : Teapot (cutlery-related) : Neuter : कष्ण (kaṣṇa)
+
+संबंधकं (saṁbandhakaṁ) : Gravy ladle : Neuter : संबंध (saṁbandha)
+
+रक्षकं (rakṣakaṁ) : Knife (special) : Neuter : रक्ष (rakṣa)
+
+शिल्पचाकु (śilpachāku) : Carving knife : Neuter : शिल्प (śilpa)
+
+पाकचूर्णं (pākacūrṇaṁ) : Grater : Neuter : पाक (pāka)
+
+किञ्चन (kiñcana) : Bottle opener : Masculine : किञ्चन (kiñcana)
+
+तापकं (tāpakaṁ) : Skewer : Neuter : ताप (tāpa)
+
+अर्जुनचम्मच (arjunacammaca) : Ice cream spoon : Masculine : अर्जुन (arjuna)
+
+आवाजकं (āvājakaṁ) : Salad fork : Neuter : आवाज (āvāja)
+
+मणिसंयोगं (maṇisaṁyogaṁ) : Salad knife : Neuter : मणि (maṇi)
+
+पुच्छदंष्ट्रा (pucchadaṁṣṭrā) : Dessert fork : Feminine : पुच्छ (puccha)
+
+वाटिका (vāṭikā) : Serving fork : Feminine : वाटि (vāṭi)
+
+पात्रादानं (pātrādānaṁ) : Serving spoon (long handle) : Neuter : पात्र (pātra)
+
+घृतपात्रम् (ghṛtapātram) : Butter knife : Neuter : घृत (ghṛta)
+
+तलचाकु (talachāku) : Bread knife : Neuter : तल (tala)
+
+रचना (racanā) : Cake server : Feminine : रचन (raca)
+
+तलचम्मच (talcammaca) : Cooking spoon : Masculine : तल (tala)
+
+द्रव्यकर्म (dravyakarma) : Carving fork : Neuter : द्रव्य (dravya)
+
+कण्ठकचाकु (kaṇṭhakachāku) : Fruit knife : Neuter : कण्ठक (kaṇṭhaka)
+
+पात्रधारकं (pātradhārakaṁ) : Plate holder : Neuter : पात्र (pātra)
+
+शेषकं (śeṣakaṁ) : Tea strainer : Neuter : शेष (śeṣa)
+
+द्रव्यधातु (dravyadhātu) : Salt shaker : Neuter : द्रव्य (dravya)
+
+प्रचं (pracaṁ) : Ladle for stew : Masculine : प्रच (praca)
+
+संधानकं (saṁdhānakaṁ) : Butter spreader : Neuter : संधान (saṁdhāna)
+
+विपत्तिकं (vipattikaṁ) : Egg beater : Neuter : विपत्ति (vipatti)
+
+ग्रहणकं (grahaṇakaṁ) : Stirring spoon : Neuter : ग्रहण (grahaṇa)
+
+सुराहिकं (surāhikaṁ) : Corkscrew : Neuter : सुरा (surā)
+
+बदृणं (badṛṇaṁ) : Nutcracker : Neuter : बदृण (badṛṇa)
+
+शूलकं (śūlakaṁ) : Skewer for meat : Neuter : शूल (śūla)
+
+ताड़नचम्मच (tāḍanacammaca) : Pudding spoon : Masculine : ताड़न (tāḍana)
+
+पुष्पकं (puṣpakaṁ) : Spoon for sauces : Neuter : पुष्प (puṣpa)
+
+सङ्ग्रहकं (saṅgrahakaṁ) : Ladle for sauces : Neuter : सङ्ग्रह (saṅgraha)
+
+पञ्चालिका (pañcālikā) : Teaspoon : Feminine : पञ्चालि (pañcāli)
+
+कुराहिका (kurāhikā) : Mixing spoon : Feminine : कुर (kura)
+
+व्यञ्जनपात्रम् (vyañjanapātram) : Food container (for cutlery) : Neuter : व्यञ्जन (vyañjana)
+
+तदंष्ट्रा (tadāṁṣṭrā) : Fork for salad : Feminine : तद (tad)
+
+वर्धमानं (vardhamānaṁ) : Soup spoon : Neuter : वर्धमान (vardhamāna)
+
+चश्मकलिका (caśmakalikā) : Eye spoon (small scoop) : Feminine : चश्म (caśma)
+
+आलंबिका (ālaṁbikā) : Serving ladle : Feminine : आलंब (ālaṁba)

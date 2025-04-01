@@ -1,10 +1,12 @@
 // Array of images and their captions
 let images = [
-    { src: "../images/vocab/kitchen/kitchen.png", caption: "kitchen", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/knife.png", caption: "knife", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/plate.png", caption: "plate", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/spoon.png", caption: "spoon", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/water_glass.png", caption: "water glass", audio: "../images/vocab/kitchen/kitchen.m4a" }
+    { src: "../images/vocab/kitchen/kitchen.png", caption: "पाकशाला : स्त्रीलिङ्ग : पाक", audio: "../images/vocab/kitchen/kitchen.m4a" },
+    { src: "../images/vocab/kitchen/knife.png", caption: "चूरिका : स्त्रीलिङ्ग : चूरि", audio: "../images/vocab/kitchen/kitchen.m4a" },
+    { src: "../images/vocab/kitchen/plate.png", caption: "स्थालिका : स्त्रीलिङ्ग : स्थालि", audio: "../images/vocab/kitchen/kitchen.m4a" },
+    { src: "../images/vocab/kitchen/spoon.png", caption: "चमसः : पुल्लिङ्ग : चमस", audio: "../images/vocab/kitchen/kitchen.m4a" },
+    { src: "../images/vocab/kitchen/water_glass.png", caption: "चषकः : पुल्लिङ्ग : चषक", audio: "../images/vocab/kitchen/kitchen.m4a" },
+    { src: "../images/vocab/kitchen/vessel.png", caption: "पात्रम् : नपुंसकलिङ्ग : पात्र", audio: "../images/vocab/kitchen/kitchen.m4a" }
+
 ];
 
 // Function to shuffle images using Fisher-Yates algorithm
