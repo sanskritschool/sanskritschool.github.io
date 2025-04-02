@@ -37,21 +37,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 
 sanskrit word : english word : gender : root
 
+clothes:
+========
 
-aroudn the Kitchen
+around the house
+================
+cradle
+
+
+around the Kitchen
 -------------------
 
-तस्मिन (tasma) : Spoon : Masculine : तस् (tas)
-पात्रम् (pātram) : Vessel : Neuter : पात्र (pātra)
-वर्तिका (vartikā) : Roll : Feminine : वर्त (varta)
 तलम् (talam) : Pan : Neuter : तल (tala)
-चूलिका (cūlikā) : Stove : Feminine : चूल (cūla)
-कटोरा (kaṭorā) : Bowl : Masculine : कटोर (kaṭora)
 सङ्ग्राहकं (saṅgrāhakaṁ) : Grater : Neuter : सङ्ग्राहक (saṅgrāhaka)
 मणिकं (maṇikaṁ) : Tongs : Neuter : मणि (maṇi)
+
 द्रव्यपात्रम् (dravyapātram) : Measuring cup : Neuter : द्रव्य (dravya)
-रजतपात्रम् (rajatapātram) : Silver vessel : Neuter : रजत (rajata)
-पात्रिका (pātrikā) : Small plate : Feminine : पात्र (pātra)
 द्रव्यकण्ठी (dravyakaṇṭhī) : Ladle : Feminine : द्रव्य (dravya)
 पटकं (pātakaṁ) : Apron : Neuter : पट (paṭa)
 द्रव्यधारकं (dravyadhārakaṁ) : Pitcher : Neuter : द्रव्य (dravya)

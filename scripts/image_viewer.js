@@ -1,12 +1,14 @@
 // Array of images and their captions
 let images = [
-    { src: "../images/vocab/kitchen/kitchen.png", caption: "पाकशाला : स्त्रीलिङ्ग : पाक", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/knife.png", caption: "चूरिका : स्त्रीलिङ्ग : चूरि", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/plate.png", caption: "स्थालिका : स्त्रीलिङ्ग : स्थालि", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/spoon.png", caption: "चमसः : पुल्लिङ्ग : चमस", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/water_glass.png", caption: "चषकः : पुल्लिङ्ग : चषक", audio: "../images/vocab/kitchen/kitchen.m4a" },
-    { src: "../images/vocab/kitchen/vessel.png", caption: "पात्रम् : नपुंसकलिङ्ग : पात्र", audio: "../images/vocab/kitchen/kitchen.m4a" }
-
+    { src: "../images/vocab/kitchen/kitchen.png", caption: "पाकशाला : स्त्रीलिङ्ग : पाक", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/knife.png", caption: "चूरिका : स्त्रीलिङ्ग : चूरि", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/plate.png", caption: "स्थालिका : स्त्रीलिङ्ग : स्थालि", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/spoon.png", caption: "चमसः : पुल्लिङ्ग : चमस", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/water_glass.png", caption: "चषकः : पुल्लिङ्ग : चषक", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/vessel.png", caption: "पात्रम् : नपुंसकलिङ्ग : पात्र", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/rolling_pin.png", caption: "वेल्लनम् : नपुंसकलिङ्गम् : वल्", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/stove.png", caption: "चूलिका : स्त्रीलिङ्गम् : चूलि", audio: "../images/vocab/kitchen/bell.mp3" },
+    { src: "../images/vocab/kitchen/bowl.png", caption: "कटोरा : स्त्रीलिङ्गम् : कटक", audio: "../images/vocab/kitchen/bell.mp3" },
 ];
 
 // Function to shuffle images using Fisher-Yates algorithm
