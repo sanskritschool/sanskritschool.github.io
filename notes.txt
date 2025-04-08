@@ -1,3 +1,15 @@
+Before adding to git
+--------------------
+run this command and ensure it  prints nothing:
+grep -r img * | grep -v dragg
+
+Do before next git add
+----------------------
+
+Logo
+Created in Krita 5.2.9.
+Image size is 240x60, transparent background. Font is Apple Chancery, 9pt
+
 TODO
 1. Add full list of 2200 dhatus
 2. Add Gita
@@ -7,16 +19,7 @@ TODO
    right aligned on right side
 6. Add visitor counter
 
-DNS: all resources must use https
-
-rename stories/chandamama to something else
-URLs
-
-Navigation Bars
-https://www.w3schools.com/css/css_navbar.asp
-
-How TO - Responsive Top Navigation
-https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+FIXME
 
 
 https://www.chandamamastories.com/copyright-disclaimer/
@@ -65,10 +68,7 @@ around the Kitchen
 तप् (tap) : Tray : Masculine : तप (tapa)
 व्रणपात्रम् (vraṇapātram) : Kettle : Neuter : व्रण (vraṇa)
 आच्छादनं (ācchādanaṁ) : Lid : Neuter : आच्छाद (ācchāda)
-सायकं (sāyakaṁ) : Knife : Neuter : सायक (sāyaka)
 कलशः (kalaśaḥ) : Pitcher : Masculine : कलश (kalaśa)
-वर्तनं (vartanam) : Bowl : Neuter : वर्त (varta)
-पोषकधातु (poṣakadhātu) : Cooking utensil : Masculine : पोषक (poṣaka)
 नम्राणि (namrāṇi) : Napkin : Neuter : नम्र (namra)
 द्रव्यसूचकं (dravyasūcakaṁ) : Salt shaker : Neuter : द्रव्य (dravya)
 pepper shaker

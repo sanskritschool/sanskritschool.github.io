@@ -1,0 +1,30 @@
+.responsive-grid {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    /*padding: 10px;*/
+}
+
+/* Large screens: Horizontal layout */
+@media (min-width: 768px) {
+    .responsive-grid {
+        grid-template-columns: repeat(3, minmax(10px, auto));
+        justify-content: start; /* Aligns items to the left */
+    }
+}
+
+/* Small screens: Strict vertical stacking */
+@media (max-width: 767px) {
+    .responsive-grid {
+        grid-template-columns: 1fr; /* Forces a single column */
+    }
+}
+
+.responsive-grid-item {
+    /*background-color: lightblue;*/
+    /*padding: 20px;*/
+    text-align: left;
+    font-size: 1.2em;
+    /*border: 1px solid #ccc; */
+    white-space: nowrap; /* Prevents text from wrapping */
+}

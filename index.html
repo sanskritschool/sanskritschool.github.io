@@ -3,41 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beautiful Website</title>
+    <title>Samskrut</title>
     <link rel="stylesheet" href="styles/styles.css" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- for Samskrut in header -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
-    />
-    <!-- end for Samskrut in header -->
-
     <script src="scripts/script.js"></script>
   </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" draggable="false" />
+      </div>
 
-  <header class="banner">
-    <div class="banner-left playfair-display-sc-regular">Samskrut</div>
-    <div class="banner-right"><a href="about_us.html">About Us</a></div>
-  </header>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="english/stories.html">Stories</a></li>
+        <li><a href="english/vocab.html">Vocabulary</a></li>
+        <li><a href="english/grammar.html">Grammar</a></li>
+        <li><a href="english/contact_us.html">Contact Us</a></li>
+      </ul>
 
-  <body class="landing-page">
+      <!-- Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger" onclick="toggleHamburger()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- vertical menu, hidden by default -->
+      <div class="sk-vert-menu link-container" id="sk-vert-menu">
+        <a class="sk-vert-menu-item" href="index.html">Home</a>
+        <hr class="link-container" />
+        <a href="english/stories.html">Stories</a>
+        <hr class="link-container" />
+        <a href="english/vocab.html">Vocabulary</a>
+        <hr class="link-container" />
+        <a href="english/grammar.html">Grammar</a>
+        <hr class="link-container" />
+        <a href="english/contact_us.html">Contact Us</a>
+        <hr class="link-container" />
+        <br />
+      </div>
+      <br />
+      <!-- end vertical menu, hidden by default -->
+
+      <!-- language links -->
+      <!--
     <div style="padding: 10px">
       <br /><br />
       <p class="stretched_center">
-        <a
-          class="url-no-underline"
-          href="english/index.html"
-          style="padding: 0px 10px 0px 0px"
-          >English</a
-        >
         <a
           class="url-no-underline"
           href="hindi/index.html"
@@ -52,11 +68,34 @@
         >
       </p>
       <br />
-      <h2 class="stretched_center">
-        Welcome to Samskrut - A place to learn Samskrutam. This website is under
-        development!
-      </h2>
-      <br /><br /><br />
-    </div>
+     -->
+      <!-- end language links -->
+
+      <h3>Welcome to Your Sanskrit Learning Journey!</h3>
+      <br />
+      Explore the timeless beauty and profound wisdom of Sanskrit, the language
+      of ancient scriptures, philosophy, and classical literature.
+      <br /><br />
+      Learn Sanskrit with confidence and unlock the deeper meanings of sacred
+      texts like the Vedas, Upanishads, Bhagavad Gita, and more.
+      <br /><br />
+      Start your journey today and connect with the heritage of one of the
+      world’s oldest and most revered languages!
+      <br />
+      <br />
+      <br />
+      <h2 class="stretched_center">This website is under development!</h2>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <!--
+      <ul class="footer-links">
+      <li><a href="">Terms</a></li>
+      </ul>
+      -->
+      <div class="copyright">सत्यमेव जयते</div>
+    </footer>
+    <!-- end footer -->
   </body>
 </html>
