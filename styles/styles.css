@@ -376,13 +376,17 @@ footer {
  * for a floating window; I use this to show
  * chandamama disclaimer among other things
  */
- .sk-hover-link {
+.hover-container {
   position: relative;
-  cursor: pointer;
-  text-decoration: none;
+  display: inline-block;
 }
 
-.sk-floating-window {
+.hover-trigger {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.floating-window {
   display: none;
   position: absolute;
   top: 2.5em;
@@ -397,6 +401,6 @@ footer {
   border-radius: 8px;
 }
 
-.sk-hover-link:hover .sk-floating-window {
+.hover-container:hover .floating-window {
   display: block;
 }
