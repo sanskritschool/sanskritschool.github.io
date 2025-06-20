@@ -19,23 +19,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samskrut</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <script src="../../scripts/script.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">
-        <img src="../images/logo.png" alt="Logo" draggable="false" />
+        <img src="../../images/logo.png" alt="Logo" draggable="false" />
       </div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="../index.html">Home</a></li>
-        <li><a class="active" href="stories.html">Stories</a></li>
-        <li><a href="vocab.html">Vocabulary</a></li>
-        <li><a href="grammar.html">Grammar</a></li>
-        <li><a href="scriptures/scriptures.html">Scriptures</a></li>
-        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../stories.html">Stories</a></li>
+        <li><a href="../vocab.html">Vocabulary</a></li>
+        <li><a href="../grammar.html">Grammar</a></li>
+        <li><a class="active" href="scriptures.html">Scriptures</a></li>
+        <li><a href="../contact_us.html">Contact</a></li>
         <li style="font-size: 24px; padding: 11px 0px 0px 0px; line-height: 0px;"><span id="gearTriggerHorizontal">⚙️</span></li>
       </ul>
 
@@ -45,6 +45,13 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
+    </nav>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li aria-current="page">Scriptures</li>
+      </ol>
     </nav>
     <!-- end Navbar -->
 
@@ -69,28 +76,21 @@
       </div>
     </div>
 
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <ol>
-        <li><a href="../index.html">Home</a></li>
-        <li aria-current="page">Stories</li>
-      </ol>
-    </nav>
-
     <!-- Main -->
     <main>
       <!-- vertical menu -->
       <div class="sk-vert-menu link-container" id="sk-vert-menu">
-        <a href="../index.html">Home</a>
+        <a href="../../index.html">Home</a>
         <hr class="link-container" />
-        <a class="sk-vert-menu-item" href="stories.html">Stories</a>
+        <a href="../stories.html">Stories</a>
         <hr class="link-container" />
-        <a href="vocab.html">Vocabulary</a>
+        <a href="../vocab.html">Vocabulary</a>
         <hr class="link-container" />
-        <a href="grammar.html">Grammar</a>
+        <a href="../grammar.html">Grammar</a>
         <hr class="link-container" />
-        <a href="scriptures/scriptures.html">Scriptures</a>
+        <a class="sk-vert-menu-item" href="scriptures.html">Scriptures</a>
         <hr class="link-container" />
-        <a href="contact_us.html">Contact Us</a>
+        <a href="../contact_us.html">Contact</a>
         <hr class="link-container" />
         <span id="gearTriggerVertical" style="padding: 6px 0px 6px 10px">⚙️</span>
         <hr class="link-container" />
@@ -111,45 +111,18 @@
       -->
       <!-- end language links -->
 
-      <span class="alt-lang" style="font-weight: bold;">Chandamama stories</span>
-
-      <div class="hover-container alt-lang">
-        <span class="hover-trigger">(Disclaimer)</span>
-          <div class="floating-window alt-lang">
-            <p>
-              <h3>Copyright Disclaimer</h3>
-              <br />
-              The stories featured in this section are from Chandamama magazine,
-              Samskrutam edition.
-              <br />
-              <br />
-              These stories are published as is, without any modification.
-              Chandamama magazine ceased publication in 2013, and its intellectual
-              property rights are currently under legal proceedings.
-              <br />
-              <br />
-              This website does not claim ownership of these stories. They are
-              used here simply as an aid to learn Samskrutam.
-              <br />
-              <br />
-              If you are a rights holder or have concerns regarding any content on
-              this site, please contact us. We are committed to resolving any
-              issues promptly and amicably.
-            </p>
-          </div> <!-- <div class="floating-window alt-lang"> -->
-      </div> <!-- <div class="hover-container alt-lang"> -->
-
       <div class="alt-lang">
-      <ol class="my-ol">
-        <li class="num-list">
-          <a
-            class="a-no-deco"
-            href="stories/chandamama_short/secret_of_wealth.html"
-            >The secret of wealth</a
-          >
-        </li>
-      </ol>
+        <h3>Select scripture <br /></h3>
+        <ol class="my-ol">
+          <li class="num-list">
+            <a class="a-no-deco" href="gita/gita_chapters.html"
+              >Bhagavad Gita</a
+            >
+          </li>
+        </ol>
       </div> <!-- <div class="alt-lang"> -->
+
+      <!-- <div class="content"> -->
     </main>
     <!-- end Main -->
 
@@ -160,11 +133,9 @@
       <li><a href="">Terms</a></li>
     </ul>
     -->
-    <div class="copyright">सत्यमेव जयते</div>
+      <div class="copyright">सत्यमेव जयते</div>
     </footer>
     <!-- end Footer -->
-
-    <script src="../scripts/settings.js"></script>
-
+    <script src="../../scripts/settings.js"></script>
   </body>
 </html>

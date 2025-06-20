@@ -34,7 +34,9 @@
         <li><a href="../../stories.html">Stories</a></li>
         <li><a href="../../vocab.html">Vocabulary</a></li>
         <li><a class="active" href="../../grammar.html">Grammar</a></li>
-        <li><a href="../../contact_us.html">Contact Us</a></li>
+        <li><a href="../../scriptures/scriptures.html">Scriptures</a></li>
+        <li><a href="../../contact_us.html">Contact</a></li>
+        <li style="font-size: 24px; padding: 11px 0px 0px 0px; line-height: 0px;"><span id="gearTriggerHorizontal">⚙️</span></li>
       </ul>
 
       <!-- Hamburger Button -->
@@ -44,6 +46,35 @@
         <span class="bar"></span>
       </button>
     </nav>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../grammar.html">Grammar</a></li>
+        <li aria-current="page">Sandhi</li>
+      </ol>
+    </nav>
+
+    <!-- Floating Window for font size settings -->
+    <div class="floating-window-centered" id="fontMenu">
+      <h3>Select English Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="alt">
+          <a style="font-size: 16px;" href="#" data-size="16px">A</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">A</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">A</a>
+        </div>
+      </div>
+      <br />
+      <h3>Select Sanskrit Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="sanskrit">
+          <a style="font-size: 16px;" href="#" data-size="16px">अ</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">अ</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">अ</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Main -->
     <main>
@@ -57,19 +88,37 @@
         <hr class="link-container" />
         <a class="sk-vert-menu-item" href="../../grammar.html">Grammar</a>
         <hr class="link-container" />
-        <a href="../../contact_us.html">Contact Us</a>
+        <a href="../../scriptures/scriptures.html">Scriptures</a>
+        <hr class="link-container" />
+        <a href="../../contact_us.html">Contact</a>
+        <hr class="link-container" />
+        <span id="gearTriggerVertical" style="padding: 6px 0px 6px 10px">⚙️</span>
         <hr class="link-container" />
         <br />
       </div>
-      <br />
       <!-- end vertical menu -->
 
-      <div class="devanagari">सन्धिः sandhiḥ</div>
+      <!-- language links -->
+      <!--
+      <div style="padding: 10px">
+        <br />
+        <br />
+        <p class="stretched_center">
+          <a class="url-no-underline" href="hindi/index.html" style="padding: 0px 10px 0px 10px" >हिन्दी</a>
+          <a class="url-no-underline" href="kannada/index.html" style="padding: 0px 0px 0px 10px" >ಕನ್ನಡ</a>
+        </p>
+        <br />
+      </div>
+      -->
+      <!-- end language links -->
+
+      <div class="sanskrit">सन्धिः sandhiḥ</div>
       <br />
+      <div class="alt-lang">
       In speech, we take shortcuts to make it easier to speak quickly and
       smoothly. For example, in English you would replace "bread and butter"
       with "bread n butter". In Sanskrit, these shortcuts are called Sandhis.
-      Other languages have these shortcuts too. .<br />
+      Other languages have these shortcuts too.<br />
       <br />
       A sandhi can occur within a word or between words. Sandhi changes the
       sounds at the junction of two letters or words to make pronunciation
@@ -105,14 +154,19 @@
       In Sanskrit:
       <br />
       <br />
-      पूर्वपदम् can end in a स्वर (vowel), a व्यञ्जन (consonant) or a अः
-      (visarga).
+      Here are some more examples.<br />
       <br />
-      परपदम् can begin with a स्वर or a व्यञ्जन. It cannot begin with a अः
+      महा + ईश = महेश (आ + ई = ए) <br />
+      गण + ईशः = गणेशः (अ + ई = ए) <br />
+      सूर्य + उदयः = सूर्योदयः (अ + उ = ओ) <br />
+      <br />
+      पूर्वपदम् can end in a स्वर (vowel), a व्यञ्जन (consonant) or a अः (visarga).
+      <br />
+      परपदम् can begin with a स्वर or a व्यञ्जन. It cannot begin with a अः (visarga).
       <br />
       <br />
       Based on the combination of the ending sound in पूर्वपदम् and beginning
-      sound of परपदम् sandhis are categorised into स्वरसन्धिः व्यञ्जनसन्धिः and
+      sound in परपदम् sandhis are categorised into स्वरसन्धिः, व्यञ्जनसन्धिः and
       विसर्गसन्धिः as shown in the following table:
       <br />
       <br />
@@ -121,6 +175,23 @@
         alt="types of sandhi"
         draggable="false"
       />
+      <br />
+      <br />
+      In sandhi, transformations happen at the junction of sounds, and these
+      transformations can be classified based on what kind of change is happening.
+      <br />
+      <br />
+      <h3>आदेशः Substitution</h3>
+      In this type of sandhi, one sound is replaced by another.
+      Think of it like a 'swap', the original letter is substituted
+      with a different one due to the sandhi rule.
+      <br />
+      <br />
+      For example: तत् + अपि = तदापि. Here the final त् of तत् is repalced by दा
+      <br />
+      <br />
+      <h3>आगमः Insertion</h3>
+      आगमः means 'to come'. In this transformation, an extra letter is added (comes in) to help pronunciation.
       <br />
       <br />
 
@@ -190,6 +261,7 @@
       <br />
       <br />
       <h2 class="stretched_center">This website is under development!</h2>
+      </div> <!-- <div class="alt-lang"> -->
     </main>
     <!-- end Main -->
 
@@ -203,5 +275,7 @@
       <div class="copyright">सत्यमेव जयते</div>
     </footer>
     <!-- end Footer -->
+
+    <script src="../../../scripts/settings.js"></script>
   </body>
 </html>

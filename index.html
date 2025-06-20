@@ -25,8 +25,8 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="logo">
-        <img src="images/logo.png" alt="Logo" draggable="false" />
+      <div class="left-group">
+        <div><img src="images/logo.png" alt="Logo" draggable="false" /></div>
       </div>
 
       <ul class="nav-links" id="navLinks">
@@ -34,7 +34,9 @@
         <li><a href="english/stories.html">Stories</a></li>
         <li><a href="english/vocab.html">Vocabulary</a></li>
         <li><a href="english/grammar.html">Grammar</a></li>
-        <li><a href="english/contact_us.html">Contact Us</a></li>
+        <li><a href="english/scriptures/scriptures.html">Scriptures</a></li>
+        <li><a href="english/contact_us.html">Contact</a></li>
+        <li style="font-size: 24px; padding: 11px 0px 0px 0px; line-height: 0px;"><span id="gearTriggerHorizontal">⚙️</span></li>
       </ul>
 
       <!-- Hamburger Button -->
@@ -44,6 +46,30 @@
         <span class="bar"></span>
       </button>
     </nav>
+    <!-- end Navbar -->
+
+    <!-- Floating Window for font size settings -->
+    <div class="floating-window-centered" id="fontMenu">
+      <h3>Select English Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="alt">
+          <a style="font-size: 16px;" href="#" data-size="16px">A</a>
+          <a style="font-size: 18px;" href="#" data-size="18px">A</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">A</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">A</a>
+        </div>
+      </div>
+      <br />
+      <h3>Select Sanskrit Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="sanskrit">
+          <a style="font-size: 16px;" href="#" data-size="16px">अ</a>
+          <a style="font-size: 18px;" href="#" data-size="18px">अ</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">अ</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">अ</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Main -->
     <main>
@@ -57,7 +83,11 @@
         <hr class="link-container" />
         <a href="english/grammar.html">Grammar</a>
         <hr class="link-container" />
-        <a href="english/contact_us.html">Contact Us</a>
+        <a href="english/scriptures/scriptures.html">Scriptures</a>
+        <hr class="link-container" />
+        <a href="english/contact_us.html">Contact</a>
+        <hr class="link-container" />
+        <span id="gearTriggerVertical" style="padding: 6px 0px 6px 10px">⚙️</span>
         <hr class="link-container" />
         <br />
       </div>
@@ -66,40 +96,37 @@
 
       <!-- language links -->
       <!--
-    <div style="padding: 10px">
-      <br /><br />
-      <p class="stretched_center">
-        <a
-          class="url-no-underline"
-          href="hindi/index.html"
-          style="padding: 0px 10px 0px 10px"
-          >हिन्दी</a
-        >
-        <a
-          class="url-no-underline"
-          href="kannada/index.html"
-          style="padding: 0px 0px 0px 10px"
-          >ಕನ್ನಡ</a
-        >
-      </p>
-      <br />
-     -->
+      <div style="padding: 10px">
+        <br />
+        <br />
+        <p class="stretched_center">
+          <a class="url-no-underline" href="hindi/index.html" style="padding: 0px 10px 0px 10px" >हिन्दी</a>
+          <a class="url-no-underline" href="kannada/index.html" style="padding: 0px 0px 0px 10px" >ಕನ್ನಡ</a>
+        </p>
+        <br />
+      </div>
+      -->
       <!-- end language links -->
 
-      <h3>Welcome to Your Sanskrit Learning Journey!</h3>
-      <br />
-      Explore the timeless beauty and profound wisdom of Sanskrit, the language
-      of ancient scriptures, philosophy, and classical literature.
-      <br /><br />
-      Learn Sanskrit with confidence and unlock the deeper meanings of sacred
-      texts like the Vedas, Upanishads, Bhagavad Gita, and more.
-      <br /><br />
-      Start your journey today and connect with the heritage of one of the
-      world’s oldest and most revered languages!
-      <br />
-      <br />
-      <br />
-      <h2 class="stretched_center">This website is under development!</h2>
+      <div class="alt-lang">
+        <h3>Welcome to Your Sanskrit Learning Journey!</h3>
+        <br />
+        Explore the timeless beauty and profound wisdom of Sanskrit, the language
+        of ancient scriptures, philosophy, and classical literature.
+        <br /><br />
+        Learn Sanskrit with confidence and unlock the deeper meanings of sacred
+        texts like the Vedas, Upanishads, Bhagavad Gita, and more.
+        <br /><br />
+        Start your journey today and connect with the heritage of one of the
+        world’s oldest and most revered languages!
+        <br />
+        <br />
+        <br />
+        <h2 class="stretched_center">This website is under development!</h2>
+        <br />
+        <br />
+        <br />
+      </div>
     </main>
 
     <!-- footer -->
@@ -112,5 +139,8 @@
       <div class="copyright">सत्यमेव जयते</div>
     </footer>
     <!-- end footer -->
+
+    <script src="scripts/settings.js"></script>
+
   </body>
 </html>

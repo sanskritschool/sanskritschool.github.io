@@ -7,7 +7,7 @@ let images = [
   },
   {
     src: "../images/vocab/kitchen/knife.png",
-    caption: "चूरिका ● स्त्रीलिङ्ग ● चूरि",
+    caption: "छुरिका ● स्त्रीलिङ्ग ● छुरिका",
     audio: "../images/vocab/kitchen/bell.mp3",
   },
   {
@@ -63,6 +63,12 @@ let viewerImage = document.getElementById("viewerImage");
 let viewerCaption = document.getElementById("viewerCaption");
 let audioPlayer = new Audio(); // Create an audio object
 let currentIndex = 0;
+
+  // Apply Sanskrit font size from localStorage to caption
+  const savedFontSize = localStorage.getItem("sanskritFontSize");
+  if (savedFontSize) {
+    viewerCaption.style.fontSize = savedFontSize;
+  }
 
 // Function to load an image based on the index
 function loadImage(index) {

@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-E725P6K55J"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E725P6K55J"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -19,23 +16,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samskrut</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../../../styles/styles.css" />
+    <script src="../../../scripts/script.js"></script>
+    <script src="../../../scripts/tooltip.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">
-        <img src="../images/logo.png" alt="Logo" draggable="false" />
+        <img src="../../../images/logo.png" alt="Logo" draggable="false" />
       </div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="stories.html">Stories</a></li>
-        <li><a class="active" href="vocab.html">Vocabulary</a></li>
-        <li><a href="grammar.html">Grammar</a></li>
-        <li><a href="scriptures/scriptures.html">Scriptures</a></li>
-        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../stories.html">Stories</a></li>
+        <li><a href="../../vocab.html">Vocabulary</a></li>
+        <li><a href="../../grammar.html">Grammar</a></li>
+        <li><a class="active" href="../scriptures.html">Scriptures</a></li>
+        <li><a href="../../contact_us.html">Contact Us</a></li>
         <li style="font-size: 24px; padding: 11px 0px 0px 0px; line-height: 0px;"><span id="gearTriggerHorizontal">⚙️</span></li>
       </ul>
 
@@ -46,14 +44,17 @@
         <span class="bar"></span>
       </button>
     </nav>
+    <!-- end Navbar -->
 
+    <!-- Bread crumbs -->
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <ol>
-        <li><a href="../index.html">Home</a></li>
-        <li aria-current="page">Vocabulary</li>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../scriptures.html">Scriptures</a></li>
+        <li><a href="../gita/gita_chapters.html">Bhagavad Gita</a></li>
+        <li aria-current="page">Chapter 07</li>
       </ol>
     </nav>
-    <!-- end Navbar -->
 
     <!-- Floating Window for font size settings -->
     <div class="floating-window-centered" id="fontMenu">
@@ -80,60 +81,64 @@
     <main>
       <!-- vertical menu -->
       <div class="sk-vert-menu link-container" id="sk-vert-menu">
-        <a href="../index.html">Home</a>
+        <a href="../../../index.html">Home</a>
         <hr class="link-container" />
-        <a href="stories.html">Stories</a>
+        <a href="../../stories.html">Stories</a>
         <hr class="link-container" />
-        <a class="sk-vert-menu-item" href="vocab.html">Vocabulary</a>
+        <a href="../../vocab.html">Vocabulary</a>
         <hr class="link-container" />
-        <a href="grammar.html">Grammar</a>
+        <a href="../../grammar.html">Grammar</a>
         <hr class="link-container" />
-        <a href="scriptures/scriptures.html">Scriptures</a>
+        <a class="sk-vert-menu-item" href="../scriptures.html">Scriptures</a>
         <hr class="link-container" />
-        <a href="contact_us.html">Contact</a>
+        <a href="../../contact_us.html">Contact Us</a>
         <hr class="link-container" />
         <span id="gearTriggerVertical" style="padding: 6px 0px 6px 10px">⚙️</span>
         <hr class="link-container" />
       </div>
       <!-- end vertical menu -->
 
-      <!-- language links -->
-      <!--
-      <div style="padding: 10px">
-        <br />
-        <br />
-        <p class="stretched_center">
-          <a class="url-no-underline" href="hindi/index.html" style="padding: 0px 10px 0px 10px" >हिन्दी</a>
-          <a class="url-no-underline" href="kannada/index.html" style="padding: 0px 0px 0px 10px" >ಕನ್ನಡ</a>
-        </p>
-        <br />
+      <div id="tooltips-container">
+        <div class="sanskrit">
+          Chaper 7 ज्ञानविज्ञानयोगः
+          <br />
+          <br />
+          <div class="gita-grid-container">
+            <div class="gita-grid-item alt-lang">
+              With sandhi
+            </div>
+            <div class="gita-grid-item-rhs alt-lang">
+                <div>Without sandhi, with vocabulary</div>
+            </div>
+          </div>
+          <!-- <div class="gita-grid-container"> -->
+
+          <br />
+          <br />
+          <h2 class="stretched_center">This chapter is under development!</h2>
+
+          <!-- verses star there -->
+
+
+          </div>
+        </div>
+        <!-- class="sanskrit" -->
       </div>
-      -->
-      <!-- end language links -->
-
-      <div class="alt-lang">
-        <h3>Select vocabulary <br /></h3>
-        <ol class="my-ol">
-          <li class="num-list">
-            <a class="a-no-deco" href="picture_vocab.html">Picture vocabulary</a>
-          </li>
-        </ol>
-      </div> <!-- <div class="alt-lang"> -->
-
-      <!-- <div class="content"> -->
+      <!-- id="tooltips-container" -->
+       <br /> <br /> <br /> <br />
     </main>
     <!-- end Main -->
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer>
       <!--
-    <ul class="footer-links">
+      <ul class="footer-links">
       <li><a href="">Terms</a></li>
-    </ul>
-    -->
+      </ul>
+      -->
       <div class="copyright">सत्यमेव जयते</div>
     </footer>
     <!-- end Footer -->
-    <script src="../scripts/settings.js"></script>
+    <script src="../../../scripts/settings.js"></script>
   </body>
 </html>

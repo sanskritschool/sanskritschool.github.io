@@ -34,7 +34,9 @@
         <li><a href="stories.html">Stories</a></li>
         <li><a href="vocab.html">Vocabulary</a></li>
         <li><a href="grammar.html">Grammar</a></li>
+        <li><a href="">Scriptures</a></li>
         <li><a href="contact_us.html">Contact Us</a></li>
+        <li style="font-size: 24px; padding: 11px 0px 0px 0px; line-height: 0px;"><span id="gearTriggerHorizontal">⚙️</span></li>
       </ul>
 
       <!-- Hamburger Button -->
@@ -44,6 +46,28 @@
         <span class="bar"></span>
       </button>
     </nav>
+    <!-- end Navbar -->
+
+    <!-- Floating Window for font size settings -->
+    <div class="floating-window-centered" id="fontMenu">
+      <h3>Select English Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="alt">
+          <a style="font-size: 16px;" href="#" data-size="16px">A</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">A</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">A</a>
+        </div>
+      </div>
+      <br />
+      <h3>Select Sanskrit Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="sanskrit">
+          <a style="font-size: 16px;" href="#" data-size="16px">अ</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">अ</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">अ</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Main -->
     <main>
@@ -57,12 +81,30 @@
         <hr class="link-container" />
         <a href="grammar.html">Grammar</a>
         <hr class="link-container" />
-        <a href="contact_us.html">Contact Us</a>
+        <a href="">Scriptures</a>
+        <hr class="link-container" />
+        <a href="contact_us.html">Contact</a>
+        <hr class="link-container" />
+        <span id="gearTriggerVertical" style="padding: 6px 0px 6px 10px">⚙️</span>
         <hr class="link-container" />
         <br />
       </div>
       <br />
-      <!-- end vertical menu -->
+      <!-- end vertical menu, hidden by default -->
+
+            <!-- language links -->
+      <!--
+      <div style="padding: 10px">
+        <br />
+        <br />
+        <p class="stretched_center">
+          <a class="url-no-underline" href="hindi/index.html" style="padding: 0px 10px 0px 10px" >हिन्दी</a>
+          <a class="url-no-underline" href="kannada/index.html" style="padding: 0px 0px 0px 10px" >ಕನ್ನಡ</a>
+        </p>
+        <br />
+      </div>
+      -->
+      <!-- end language links -->
 
       <br />
       <br />
@@ -80,5 +122,8 @@
       <div class="copyright">सत्यमेव जयते</div>
     </footer>
     <!-- end Footer -->
+
+    <script src="scripts/settings.js"></script>
+
   </body>
 </html>

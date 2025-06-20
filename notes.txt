@@ -5,6 +5,18 @@ grep -r img * | grep -v dragg
 
 Do before next git add
 ----------------------
+- Check sandhi chapter with Vyoma parichaya materials
+- change floating window alignment for gita
+- check that every page has the google tab script at the top
+- hoevering over the settings gear does not change mouse pointer shape
+- add 4 font sizes instead of 3 (see index.html)
+- is .sanskrit being applied to all lines? see secret_of_wealth.html
+Priya
+
+
+
+Sandhi TODO
+- add reason why each sandhi is called thus
 
 Logo
 Created in Krita 5.2.9.
@@ -18,11 +30,14 @@ TODO
 5. In stories, tooltip should be left aligned on left side and
    right aligned on right side
 6. Add visitor counter
+7. Add a section for conversations
 
 FIXME
-
-
-https://www.chandamamastories.com/copyright-disclaimer/
+- tooltip gets cut off in mobile mode
+- when user has scrolled down in a document, when hamburger menu is clicked,
+  we need to scroll to top of screen before we display the vertical menu.
+  Else only white screen is shown.
+- add bread crumb
 
 furniture
 house
@@ -210,3 +225,65 @@ cutlery
 चश्मकलिका (caśmakalikā) : Eye spoon (small scoop) : Feminine : चश्म (caśma)
 
 आलंबिका (ālaṁbikā) : Serving ladle : Feminine : आलंब (ālaṁba)
+
+          <!-- verse 1 -->
+          <br />
+          <div class="gita-grid-container">
+            <div class="gita-grid-item devanagari">
+              धृतराष्ट्र उवाच । <br />
+            </div>
+            <div id="tooltips-container">
+              <div class="gita-grid-item-rhs devanagari">
+                <span class="tooltip-container hover-text" data-tooltip=" Sanjaya, Dhritarashtra's charioteer">सञ्जय ॥ 1 ॥</span>
+              </div>
+            </div>
+            <!-- <div id="tooltips-container"> -->
+          </div>
+          <!-- <div class="gita-grid-container"> -->
+
+                <span class="tooltip-container hover-text" data-tooltip=" and  अव्ययम्">च</span>
+
+
+
+<!-- floating window -->
+      <div class="hover-container">
+        <span class="hover-trigger">(Disclaimer)</span>
+        <div class="floating-window">
+          <h3>Copyright Disclaimer</h3>
+          <br />
+          <p>
+            text goes here
+          </p>
+        </div>
+      </div>
+<!-- end floating window -->
+
+। <br /> ॥ 6 ॥
+
+<span class="tooltip-container hover-text" data-tooltip=" and  अव्ययम्">च</span>
+<span class="tooltip-container hover-text" data-tooltip=" only, just, indeed, exactly  अव्ययम्">एव</span>
+
+Bhagavad Gita Chapters
+Chaper 1 अर्जुनविषादयोगः
+Chaper 2 साङ्ख्ययोगः
+Chaper 3 कर्मयोगः
+Chaper 4 ज्ञानकर्मसंन्यासयोगः
+Chaper 5 संन्यासयोगः
+Chaper 6 ध्यानयोगः
+Chaper 7 ज्ञानविज्ञानयोगः
+Chaper 8 अक्षरब्रह्मयोगः
+Chaper 9 राजविद्याराजगुह्ययोगः
+Chaper 10 विभूतियोगः
+Chaper 11 विश्वरूपदर्शनयोगः
+Chaper 12 भक्तियोगः
+Chaper 13 क्षेत्रक्षेत्रज्ञविभागयोगः
+Chaper 14 गुणत्रयविभागयोगः
+Chaper 15 पुरुषोत्तमयोगः
+Chaper 16 दैवासुरसम्पद्विभागयोगः
+Chaper 17 श्रद्धात्रयविभागयोगः
+Chaper 18 मोक्षसंन्यासयोगः
+
+
+
+
+
