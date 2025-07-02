@@ -22,6 +22,21 @@ Logo
 Created in Krita 5.2.9.
 Image size is 240x60, transparent background. Font is Apple Chancery, 9pt
 
+Checkout the following gogole fonts:
+Tangerine
+Libre Baskerville
+Alumni Sans Pinstripe
+Gruppo (a bit like oracle)
+Explora
+Cinzel (all caps)
+Castoro Titling
+Cormorant SC (all caps)
+
+nice font:
+https://nivedita2015.wordpress.com/sandhi/
+https://www.vachmi.com/articles/sanskritAlphabet.html
+
+
 TODO
 - In Gita, underline the links
 - Add full list of 2200 dhatus
@@ -32,11 +47,11 @@ TODO
 - Add a section for conversations
 
 FIXME
+- support 4 font sizes in all pages
 - tooltip gets cut off in mobile mode
 - when user has scrolled down in a document, when hamburger menu is clicked,
   we need to scroll to top of screen before we display the vertical menu.
   Else only white screen is shown.
-- add bread crumb
 
 furniture
 house
@@ -65,16 +80,16 @@ cradle
 around the Kitchen
 -------------------
 
-तलम् (talam) : Pan : Neuter : तल (tala)
-सङ्ग्राहकं (saṅgrāhakaṁ) : Grater : Neuter : सङ्ग्राहक (saṅgrāhaka)
-मणिकं (maṇikaṁ) : Tongs : Neuter : मणि (maṇi)
+  तलम् (talam) : Pan : Neuter : तल (tala)
+  सङ्ग्राहकं (saṅgrāhakaṁ) : Grater : Neuter : सङ्ग्राहक (saṅgrāhaka)
+  मणिकं (maṇikaṁ) : Tongs : Neuter : मणि (maṇi)
 
-द्रव्यपात्रम् (dravyapātram) : Measuring cup : Neuter : द्रव्य (dravya)
-द्रव्यकण्ठी (dravyakaṇṭhī) : Ladle : Feminine : द्रव्य (dravya)
-पटकं (pātakaṁ) : Apron : Neuter : पट (paṭa)
-द्रव्यधारकं (dravyadhārakaṁ) : Pitcher : Neuter : द्रव्य (dravya)
+  द्रव्यपात्रम् (dravyapātram) : Measuring cup : Neuter : द्रव्य (dravya)
+  द्रव्यकण्ठी (dravyakaṇṭhī) : Ladle : Feminine : द्रव्य (dravya)
+  पटकं (pātakaṁ) : Apron : Neuter : पट (paṭa)
+  द्रव्यधारकं (dravyadhārakaṁ) : Pitcher : Neuter : द्रव्य (dravya)
 छद्मलिखनं (chadmalikhanaṁ) : Cutting board : Neuter : छद्म (chadma)
-स्मैला (smailā) : Sink : Feminine : स्मै (smai)
+  स्मैला (smailā) : Sink : Feminine : स्मै (smai)
 मूलकयंत्रं (mūlakayantraṁ) : Mixer : Neuter : मूल (mūla)
    पुस्तकम् (pustakam) : Cookbook : Neuter : पुस्तक (pustaka)
 गुड्कर्म (guḍkarma) : Food processor : Masculine : गुड (guḍ)
@@ -82,7 +97,7 @@ around the Kitchen
 तप् (tap) : Tray : Masculine : तप (tapa)
 व्रणपात्रम् (vraṇapātram) : Kettle : Neuter : व्रण (vraṇa)
 आच्छादनं (ācchādanaṁ) : Lid : Neuter : आच्छाद (ācchāda)
-कलशः (kalaśaḥ) : Pitcher : Masculine : कलश (kalaśa)
+  कलशः (kalaśaḥ) : Pitcher : Masculine : कलश (kalaśa)
 नम्राणि (namrāṇi) : Napkin : Neuter : नम्र (namra)
 द्रव्यसूचकं (dravyasūcakaṁ) : Salt shaker : Neuter : द्रव्य (dravya)
 pepper shaker
@@ -284,6 +299,12 @@ Chaper 15 पुरुषोत्तमयोगः
 Chaper 16 दैवासुरसम्पद्विभागयोगः
 Chaper 17 श्रद्धात्रयविभागयोगः
 Chaper 18 मोक्षसंन्यासयोगः
+
+translate the following into english, word by word, without missing any words.
+Give in this format: sanskrit word: english word.
+when you encounter । character, print it like this: newline: । Any line that
+begins with <br /> should be copied as is
+
 
 
 
