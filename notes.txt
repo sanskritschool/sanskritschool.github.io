@@ -47,10 +47,11 @@ TODO
 - Add a section for conversations
 
 FIXME
-- support 4 font sizes in all pages
-- add google script to count visits
 - give correct title to all pages
 - SEO support
+- change logo for settings in all pages
+- change to Roboto thin font
+- around_the_kitchen.html has too many unwanted imports for fonts and google apis
 - tooltip gets cut off in mobile mode
 - when user has scrolled down in a document, when hamburger menu is clicked,
   we need to scroll to top of screen before we display the vertical menu.
