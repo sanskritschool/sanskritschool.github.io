@@ -48,6 +48,9 @@ TODO
 
 FIXME
 - support 4 font sizes in all pages
+- add google script to count visits
+- give correct title to all pages
+- SEO support
 - tooltip gets cut off in mobile mode
 - when user has scrolled down in a document, when hamburger menu is clicked,
   we need to scroll to top of screen before we display the vertical menu.
@@ -299,6 +302,88 @@ Chaper 15 पुरुषोत्तमयोगः
 Chaper 16 दैवासुरसम्पद्विभागयोगः
 Chaper 17 श्रद्धात्रयविभागयोगः
 Chaper 18 मोक्षसंन्यासयोगः
+
+SEO tags
+========
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Learn Sanskrit Sandhi | Online Lessons & Quizzes</title>
+  <meta name="description" content="Master Sanskrit Sandhi rules with clear lessons and interactive quizzes. Perfect for beginners and advanced learners.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.yoursite.com/sanskrit/sandhi">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Learn Sanskrit Sandhi | Online Lessons & Quizzes">
+  <meta property="og:description" content="Master Sanskrit Sandhi rules with clear lessons and interactive quizzes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yoursite.com/sanskrit/sandhi">
+  <meta property="og:image" content="https://www.yoursite.com/images/sandhi-lesson.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Learn Sanskrit Sandhi">
+  <meta name="twitter:description" content="Clear lessons and quizzes to help you master Sanskrit Sandhi.">
+  <meta name="twitter:image" content="https://www.yoursite.com/images/sandhi-lesson.jpg">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalProgram",
+    "name": "Learn Sanskrit Sandhi",
+    "description": "Free lessons on Sanskrit Sandhi with interactive quizzes.",
+    "educationalProgramMode": "online",
+    "provider": {
+      "@type": "Organization",
+      "name": "YourSite",
+      "url": "https://www.yoursite.com"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Learn Sanskrit Sandhi</h1>
+    <nav>
+      <a href="/sanskrit">Home</a>
+      <a href="/sanskrit/sandhi">Sandhi</a>
+      <a href="/sanskrit/quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>What is Sandhi?</h2>
+      <p>In Sanskrit, Sandhi refers to the rules that govern how words combine. For example...</p>
+      <img src="/images/sandhi-chart.png" alt="Sanskrit Sandhi Rules Chart">
+    </article>
+
+    <section>
+      <h2>Interactive Quiz</h2>
+      <p>Test your understanding of Sandhi with a short quiz.</p>
+      <a href="/sanskrit/quiz" class="btn">Start Quiz</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 YourSite. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+End SEO tags
 
 translate the following into english, word by word, without missing any words.
 Give in this format: sanskrit word: english word.
