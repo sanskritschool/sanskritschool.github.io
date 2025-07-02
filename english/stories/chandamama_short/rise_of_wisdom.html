@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E725P6K55J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-E725P6K55J");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samskrut</title>
+    <link rel="stylesheet" href="../../../styles/styles.css" />
+    <script src="../../../scripts/script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../../images/logo.png" alt="Logo" draggable="false" />
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a class="active" href="../../stories.html">Stories</a></li>
+        <li><a href="../../vocab.html">Vocabulary</a></li>
+        <li><a href="../../grammar.html">Grammar</a></li>
+        <li><a href="../../scriptures/scriptures.html">Scriptures</a></li>
+        <li><a href="../../contact_us.html">Contact</a></li>
+        <li style="font-size: 24px; padding: 11px 0px 0px 0px; line-height: 0px;"><span id="gearTriggerHorizontal">⚙️</span></li>
+      </ul>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger" onclick="toggleHamburger()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+    <!-- end Navbar -->
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../stories.html">Stories</a></li>
+        <li aria-current="page">The rise of wisdom</li>
+      </ol>
+    </nav>
+    <!-- end Navbar -->
+
+    <!-- Floating Window for font size settings -->
+    <div class="floating-window-centered" id="fontMenu">
+      <h3>Select English Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="alt">
+          <a style="font-size: 16px;" href="#" data-size="16px">A</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">A</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">A</a>
+        </div>
+      </div>
+      <br />
+      <h3>Select Sanskrit Font Size</h3>
+      <div>
+        <div class="font-controls" data-lang="sanskrit">
+          <a style="font-size: 16px;" href="#" data-size="16px">अ</a>
+          <a style="font-size: 20px;" href="#" data-size="20px">अ</a>
+          <a style="font-size: 24px;" href="#" data-size="24px">अ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <!-- vertical menu -->
+      <div class="sk-vert-menu link-container" id="sk-vert-menu">
+        <a href="../../../index.html">Home</a>
+        <hr class="link-container" />
+        <a class="sk-vert-menu-item" href="../../stories.html">Stories</a>
+        <hr class="link-container" />
+        <a href="../../vocab.html">Vocabulary</a>
+        <hr class="link-container" />
+        <a href="../../grammar.html">Grammar</a>
+        <hr class="link-container" />
+        <a href="../../scriptures/scriptures.html">Scriptures</a>
+        <hr class="link-container" />
+        <a href="../../contact_us.html">Contact</a>
+        <hr class="link-container" />
+        <span id="gearTriggerVertical" style="padding: 6px 0px 6px 10px">⚙️</span>
+        <hr class="link-container" />
+        <br />
+      </div>
+
+      <!-- end vertical menu -->
+
+      <!-- language links -->
+      <!--
+      <div style="padding: 10px">
+        <br />
+        <br />
+        <p class="stretched_center">
+          <a class="url-no-underline" href="hindi/index.html" style="padding: 0px 10px 0px 10px" >हिन्दी</a>
+          <a class="url-no-underline" href="kannada/index.html" style="padding: 0px 0px 0px 10px" >ಕನ್ನಡ</a>
+        </p>
+        <br />
+      </div>
+      -->
+      <!-- end language links -->
+
+      <div id="tooltips-container">
+        <div class="sanskrit">
+          <br />
+          <div class="colored-heading">ज्ञानोदयः  &nbsp; The rise of wisdom</div>
+          <br />
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Chitrapura's">चित्रपुरस्य</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" king">राजा</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Kirtisena">कीर्तिसेनः</span> ।
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" just now / immediately">" सद्यः एव</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" I">अहं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" death">मरणं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" I will attain">प्राप्स्यामि "</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" thus / so">इति</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" fear">भीतिः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" in his mind">तस्य मनसि</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" at some time / once">कदाचित्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" suddenly">अकस्मात्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" arose / appeared">उत्पन्ना</span> ।
+            <br />
+            <br />
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" minister">मन्त्री</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Dharmasena">धर्मसेनः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" this">एतं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" matter / subject">विषयं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" knew / found out">ज्ञातवान्</span> ।
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" therefore">अतः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" he">सः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" nearby">" समीपे</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" in the forest">अरण्ये</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" penance">तपः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" performing">आचरतः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" of Sage Jñānānanda">ज्ञानानन्दमुनेः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" sight / audience">दर्शनं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" obtaining">प्राप्य</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" let him come / may he go and return">आगच्छतु "</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" thus">इति</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" suggested">सूचितवान्</span> ।
+            <br />
+            <br />
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Kirtisena">कीर्तिसेनः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Jñānānanda's">ज्ञानानन्दस्य</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" hermitage">आश्रमं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" went">गतवान्</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" there">तत्र</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" his own">आत्मनः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" fear">भीतिं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" having expressed">निवेद्य</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" asked">पृष्टवान्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" you">" भवन्तः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" knowers of the three times (past, present, future)">त्रिकालज्ञाः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" great ascetics">महातपस्विनः</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" all">सर्वम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" even">अपि</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" know">जानन्ति</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" indeed">एव</span>  ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" so that">यथा</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" death">मरणं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" my">मम</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" not">न</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" may occur">भवेत्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" in such a way">तथा</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" to do">कर्तुं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" any">कोऽपि</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" method / way">उपायः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" is there?">अस्ति वा "</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" thus">इति</span> ।
+            <br />
+            <br />
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Jñānānanda">ज्ञानानन्दः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" gentle smile">मन्दहासं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" showing / revealing">प्रकटयन्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" said">उक्तवान्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" O great king">" महाराज !</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" you (honorific)">भवान्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" now">इदानीम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" still">अपि</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" in youth">तारुण्ये</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" is / are">अस्ति</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" always">सदा</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" just like this">एवम् एव</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" I remain">भवामि</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" thinking thus">इति चिन्तयन्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" from death">मरणात्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" afraid">भीतः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" you">भवान्</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" but">किन्तु</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" later in time">कालान्तरे</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" you">भवान्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" old">वृद्धः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" will become">भविष्यति</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" sight">दृष्टिः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" hearing ability">श्रवणशक्तिः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" and">च</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" will diminish">क्षीणा भविष्यति</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" teeth">दन्ताः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" from the mouth">मुखतः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" will fall out">निर्गमिष्यन्ति</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" body">देहः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" weak">दुर्बलः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" will become">भविष्यति</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" this is nature’s law">एषः प्रकृतिधर्मः</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" in this">अस्याम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" state / condition">अवस्थायाम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" should live long">चिरं जीवितव्यम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" thus">इति</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" hope">आशा</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" even">एव</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" not">न</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" arise">भवति</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" then">तदा</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" death">मरणम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" only">एव</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" desire">इच्छति</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" you">भवान्</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" in such a situation">एवं स्थिते</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" death's">मरणस्य</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" fear">भीतिः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" why">किमर्थम् ?</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" for preventing death">मरणनिवारणार्थम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" method">उपायः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" why">किमर्थम्</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" should be searched">अन्वेष्टव्यः</span> ? "
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" thus">इति</span> ।
+            <br />
+            <br />
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Kirtisena">कीर्तिसेनः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" Jñānānanda">ज्ञानानन्दं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" after bowing">नमस्कृत्य</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" O great soul">" महात्मन्</span> !
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" your">भवतः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" by grace">अनुग्रहेण</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" in me">मयि</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" wisdom">विवेकः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" has arisen">उदितः</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" fear of death">मरण भीतिः</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" now">इदानीं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" has gone far away">दूरङ्गता</span> ।
+
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" coming / visit">आगमनं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" successful">सफलं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" has become">जातम् "</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" thus">इति</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" having said">उक्त्वा</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" to the capital">राजधानीं</span>
+            <span class="tooltip-container hover-text sanskrit" data-tooltip=" returned">प्रतिगतवान्</span> ।
+
+          <br /> <br /> <br /> <br />
+        </div>
+        <!-- class="devanagari" -->
+      </div>
+      <!-- id="tooltips-container" -->
+    </main>
+    <!-- end Main -->
+
+    <!-- footer -->
+    <footer>
+      <!--
+      <ul class="footer-links">
+      <li><a href="">Terms</a></li>
+      </ul>
+      -->
+      <div class="copyright">सत्यमेव जयते</div>
+    </footer>
+    <!-- end Footer -->
+
+    <script src="../../../scripts/tooltip.js"></script>
+    <script src="../../../scripts/settings.js"></script>
+  </body>
+</html>
