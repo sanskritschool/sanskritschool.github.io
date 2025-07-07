@@ -1,3 +1,11 @@
+devanagari fonts:
+martel: light 300, reg 400
+noto serif: light 300, reg 400
+
+secret_of_wealth done
+ambarisha done
+now doing people's rep
+
 Before adding to git
 --------------------
 run this command and ensure it  prints nothing:

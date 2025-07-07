@@ -20,9 +20,48 @@
   font-weight: 400;
 }
 
+/* martel-300 - devanagari */
+@font-face {
+  font-display: swap;
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 300;
+  src: local('☺'), url('/fonts/martel-v11-devanagari-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* martel 400 - devanagari */
+@font-face {
+  font-display: swap;
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('☺'), url('/fonts/martel-v11-devanagari-400.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-devanagari-300 - devanagari */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Serif Devanagari';
+  font-style: normal;
+  font-weight: 300;
+  /* src: url('/fonts/noto-serif-devanagari-v33-devanagari-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: local('☺'), url('/fonts/noto-serif-devanagari-v33-devanagari-300.woff2') format('woff2');
+}
+
+/* noto-serif-devanagari-regular - devanagari */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Serif Devanagari';
+  font-style: normal;
+  font-weight: 400;
+  /* src: url('/fonts/noto-serif-devanagari-v33-devanagari-400.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: local('☺'), url('/fonts/noto-serif-devanagari-v33-devanagari-400.woff2') format('woff2');
+}
+
 body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
+  line-height: 1.5;
   color: #666666;
 
   display: flex;
@@ -339,9 +378,10 @@ h3 {
 }
 
 .sanskrit {
-  /*font-size: 22px;*/
+  font-family: 'Martel';
+  font-weight: 300;
   line-height: 1.5;
-  /* font-family: sans-serif; */
+  color: #717171;
 }
 
 .tooltip-container {
@@ -371,8 +411,8 @@ h3 {
 }
 
 .hover-text {
-  font-size: 20px;
-  color: black; /* Default text color */
+  /* font-size: 20px; */
+  /* color: black; /* Default text color */
   position: relative; /* Needed for positioning the tooltip */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
