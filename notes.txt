@@ -42,8 +42,8 @@ To download Google fonts locally:
 https://gwfh.mranftl.com
 
 Logo
-Created in Krita 5.2.9.
-Image size is 240x60, transparent background. Font is Apple Chancery, 9pt
+FireAlpaca with Font Great Vibes
+
 
 Checkout the following gogole fonts:
 Tangerine
