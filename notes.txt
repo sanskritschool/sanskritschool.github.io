@@ -4,12 +4,15 @@ noto serif: light 300, reg 400
 
 secret_of_wealth done
 ambarisha done
-now doing people's rep
+people's rep done
+now doing arrow's target
 
 Before adding to git
 --------------------
 run this command and ensure it  prints nothing:
 grep -r img * | grep -v dragg
+
+in styles.css ensure user-select is set to none
 
 Do before next git add
 ----------------------
@@ -295,6 +298,9 @@ translate the following into english, word by word, without missing any words.
 Give in this format: sanskrit word: english word.
 when you encounter । character, print it like this: newline: । Any line that
 begins with <br /> should be copied as is
+
+display the following without sandhi. give word by word meaning in this
+format: sanskrit word: english word
 
 
 
