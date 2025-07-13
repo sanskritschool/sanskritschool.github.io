@@ -2,10 +2,9 @@ devanagari fonts:
 martel: light 300, reg 400
 noto serif: light 300, reg 400
 
-secret_of_wealth done
-ambarisha done
-people's rep done
-now doing arrow's target
+VC
+Nambudiri Brahmin couple?
+His mother played a major role in shaping his early spiritual inclinations
 
 Before adding to git
 --------------------
@@ -297,8 +296,7 @@ Chaper 18 मोक्षसंन्यासयोगः
 
 translate the following into english, word by word, without missing any words.
 Give in this format: sanskrit word: english word.
-when you encounter । character, print it like this: newline: । Any line that
-begins with <br /> should be copied as is
+when you encounter । character, print it like this: TODO: ।
 
 display the following without sandhi. give word by word meaning in this
 format: sanskrit word: english word
