@@ -35,7 +35,7 @@
         hideTooltip();
       });
 
-      // Mobile click
+      // Mobile click (tap)
       container.addEventListener("click", (e) => {
         e.stopPropagation();
 
@@ -44,14 +44,16 @@
         } else {
           showTooltip(container);
 
+          // Delay registering outside click so it doesn't fire immediately
           setTimeout(() => {
-            document.addEventListener("click", function outsideClick(ev) {
-              if (!ev.target.closest(".tooltip-container")) {
+            const outsideClick = function (event) {
+              if (!event.target.closest(".tooltip-container")) {
                 hideTooltip();
                 document.removeEventListener("click", outsideClick);
               }
-            }, { once: true });
-          }, 50);
+            };
+            document.addEventListener("click", outsideClick, { once: true });
+          }, 100); // delay is essential!
         }
       });
     });
