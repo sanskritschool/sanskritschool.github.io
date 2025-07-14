@@ -1,18 +1,18 @@
   let activeTooltip = null;
 
-  function createTooltip(container) {
+  function createTooltip() {
     let tooltip = document.querySelector(".tooltip");
     if (!tooltip) {
       tooltip = document.createElement("div");
       tooltip.className = "tooltip";
       document.body.appendChild(tooltip);
     }
-    tooltip.textContent = container.getAttribute("data-tooltip");
     return tooltip;
   }
 
   function showTooltip(container) {
-    const tooltip = createTooltip(container);
+    const tooltip = createTooltip();
+    tooltip.textContent = container.getAttribute("data-tooltip");
     tooltip.classList.add("active");
     activeTooltip = tooltip;
   }
@@ -26,22 +26,29 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".tooltip-container").forEach(container => {
-      // Hover
-      container.addEventListener("pointerenter", () => showTooltip(container));
-      container.addEventListener("pointerleave", hideTooltip);
+      // Desktop hover
+      container.addEventListener("mouseenter", () => {
+        if (!activeTooltip) showTooltip(container);
+      });
 
-      // Tap / click
-      container.addEventListener("pointerdown", (e) => {
+      container.addEventListener("mouseleave", () => {
+        hideTooltip();
+      });
+
+      // Mobile click
+      container.addEventListener("click", (e) => {
         e.stopPropagation();
+
         if (activeTooltip) {
           hideTooltip();
         } else {
           showTooltip(container);
+
           setTimeout(() => {
-            document.addEventListener("pointerdown", function outsideClick(ev) {
+            document.addEventListener("click", function outsideClick(ev) {
               if (!ev.target.closest(".tooltip-container")) {
                 hideTooltip();
-                document.removeEventListener("pointerdown", outsideClick);
+                document.removeEventListener("click", outsideClick);
               }
             }, { once: true });
           }, 50);
