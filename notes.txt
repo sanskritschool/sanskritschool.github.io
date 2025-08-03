@@ -1,3 +1,5 @@
+to start webserver: type 'webserver'
+
 devanagari fonts:
 martel: light 300, reg 400
 noto serif: light 300, reg 400
@@ -58,6 +60,7 @@ Cormorant SC (all caps)
 nice font:
 https://nivedita2015.wordpress.com/sandhi/
 https://www.vachmi.com/articles/sanskritAlphabet.html
+https://www.sanskritlearners.club/sanskrit_story/
 
 
 TODO
@@ -296,13 +299,14 @@ Chaper 18 मोक्षसंन्यासयोगः
 
 translate the following into english, word by word, without missing any words.
 Give in this format: sanskrit word: english word.
-when you encounter । character, print it like this: TODO: ।
+when you encounter । character, print it like this: ।: TODO
 
 display the following without sandhi. give word by word meaning in this
 format: sanskrit word: english word
 
-
-
+TODO
+- check min screen width
+          alert("'My difficult words' is empty  or has fewer than 10 words. When you take a quiz and get some answers wrong, those answers get added to 'My difficult words'. I need at least 10 words to quiz you.");
 
 
 

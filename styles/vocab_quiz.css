@@ -1,0 +1,130 @@
+.quiz-container {
+  max-width: 500px;
+  padding: 1rem;
+  /*
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  background: #f9f9f9; */
+  font-family: sans-serif;
+}
+
+.quiz-container .question-block {
+  margin-bottom: 2rem;
+}
+
+.quiz-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.quiz-container .score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 5px; /* was 1rem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  background: #f9f9f9;
+  gap: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.quiz-container .score-label,
+.quiz-container .score-value {
+  text-align: center;
+  font-weight: bold;
+}
+
+.quiz-container .score-label {
+  grid-row: 1;
+}
+
+.quiz-container .score-value {
+  grid-row: 2;
+}
+
+.quiz-container #progress {
+  font-weight: bold;
+}
+
+/* Radio buttons vertical */
+/*
+.quiz-container .options label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 1rem;
+}
+*/
+
+/* Radio buttons vertical */
+.quiz-container .options label {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* sets space between two btns, and b/w btn and text */
+}
+
+.quiz-container #feedback {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.quiz-container .feedback-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.quiz-container #feedback.hidden {
+  display: none;
+}
+
+#mode-select, #start-select, #end-select {
+  font-size: 16px;
+  padding: 5px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  height: 30px;
+}
+
+/* Optional: customize when hovered or focused */
+#mode-select:hover, #start-select:hover, #end-select:hover {
+  border-color: #999;
+}
+
+#mode-select:focus, #start-select:focus, #end-select:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
+}
+
+#start-select, #end-select {
+  width: 60px;
+}
+
+#span-range-select {
+  margin: 0px 0px 0px 10px;
+}
+
+#label-range-select {
+  font-family: 'sans-serif';
+  font-size: 20px;
+  color: black;
+}

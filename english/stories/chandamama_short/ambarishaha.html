@@ -60,6 +60,7 @@
     <!-- end fonts hosted by me -->
 
     <link rel="stylesheet" href="../../../styles/styles.css" />
+    <link rel="stylesheet" href="../../../styles/audio_player.css" />
     <script src="../../../scripts/script.js"></script>
   </head>
   <body>
@@ -92,7 +93,7 @@
       <ol>
         <li><a href="../../../index.html">Home</a></li>
         <li><a href="../../stories.html">Stories</a></li>
-        <li aria-current="page">Ambarisha</li>
+        <li aria-current="page">Ambarishaha</li>
       </ol>
     </nav>
     <!-- end Navbar -->
@@ -158,16 +159,38 @@
       -->
       <!-- end language links -->
 
+      <table border="0">
+        <tr>
+          <td class="table-audio-quiz">अम्बरीषः</td>
+          <td class="table-audio-quiz">Ambarishaha</td>
+          <td class="table-audio-quiz">
+            <span class="ss-tooltip">
+              <a href="ambarishaha_quiz.html">
+                <img src="../../../images/icons/quiz.png" alt="Quiz" width="30">
+              </a>
+              <span class="ss-tooltip-text">Vocabulary quiz</span>
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <div class="custom-audio-player">
+        <img id="play-pause-btn" src="../../../images/icons/play_audio.png" alt="Play" />
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" step="1" />
+        <span id="duration">0:00</span>
+      </div>
+
+      <audio id="story-audio" src="../../../audio/stories/ambarishaha.m4a"></audio>
+      <br />
       <div id="tooltips-container">
         <div class="sanskrit">
-          <br />
-          <div class="colored-heading">अम्बरीषः  &nbsp; Ambarisha</div>
-          <br />
           <span class="tooltip-container hover-text " data-tooltip=" great king">महाराजः</span>
           <span class="tooltip-container hover-text " data-tooltip=" Ambarisha">अम्बरीषः</span>
           <span class="tooltip-container hover-text " data-tooltip=" best / excellent">श्रेष्ठः</span>
           <span class="tooltip-container hover-text " data-tooltip=" devotee of Vishnu">विष्णुभक्तः</span>
-          <span class="tooltip-container hover-text " data-tooltip=" The great King Ambarisha was Vishnu's best devotee"> ।</span>
+          <span class="tooltip-container hover-text " data-tooltip=" The great King Ambarisha was Vishnu's best devotee">&nbsp; । &nbsp;</span>
+
 
           <span class="tooltip-container hover-text" data-tooltip=" Ambarisha's">अम्बरीषस्य</span>
           <span class="tooltip-container hover-text" data-tooltip=" by devotion">भक्त्या</span>
@@ -177,14 +200,14 @@
           <span class="tooltip-container hover-text" data-tooltip=" Sudarshana Chakra">सुदर्शनचक्रं</span>
           <span class="tooltip-container hover-text" data-tooltip=" in the form of a boon">वररूपेण</span>
           <span class="tooltip-container hover-text" data-tooltip=" had given">दत्तवान् आसीत्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Pleased by Ambarisha's devotion, Lord Vishnu gave the Sudarshana discus as a boon for his protection"> ।</span>
-          <br /> <br />
+          <span class="tooltip-container hover-text" data-tooltip=" Pleased by Ambarisha's devotion, Lord Vishnu gave the Sudarshana discus as a boon for his protection">&nbsp; । &nbsp;</span>
+          <br />
           <span class="tooltip-container hover-text" data-tooltip=" once">कदाचित्</span>
           <span class="tooltip-container hover-text" data-tooltip=" Ambarisha">अम्बरीषः</span>
           <span class="tooltip-container hover-text" data-tooltip=" for a year">आवर्षे</span>
           <span class="tooltip-container hover-text" data-tooltip=" vow">व्रतम्</span>
           <span class="tooltip-container hover-text" data-tooltip=" had observed">आचरितवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Once, Ambarisha observed a vow for a whole year"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Once, Ambarisha observed a vow for a whole year">&nbsp; । &nbsp;</span>
 
           <span class="tooltip-container hover-text" data-tooltip=" vow's">व्रतस्य</span>
           <span class="tooltip-container hover-text" data-tooltip=" on the last three days">अन्तिमदिनत्रये</span>
@@ -203,11 +226,11 @@
           <span class="tooltip-container hover-text" data-tooltip=" there">तत्र</span>
           <span class="tooltip-container hover-text" data-tooltip=" came">आगतवान्</span>
           <span class="tooltip-container hover-text" data-tooltip=" After fasting for the last three days of the vow and completing
-            the worship on the final day, just as he sat down to eat, Sage Durvasa arrived there"> ।</span>
+            the worship on the final day, just as he sat down to eat, Sage Durvasa arrived there">&nbsp; । &nbsp;</span>
 
           <span class="tooltip-container hover-text" data-tooltip=" just a moment">"किञ्चित्</span>
           <span class="tooltip-container hover-text" data-tooltip=" wait">तिष्ठतु</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Please wait a little"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Please wait a little">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" in the river">नद्यां</span>
           <span class="tooltip-container hover-text" data-tooltip=" having bathed">स्नात्वा</span>
@@ -217,14 +240,14 @@
           <span class="tooltip-container hover-text" data-tooltip=" to the river">नदीं</span>
           <span class="tooltip-container hover-text" data-tooltip=" went">गतवान्</span>
           <span class="tooltip-container hover-text" data-tooltip=" and">च</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Saying, 'I will return after bathing in the river,' he went to the river"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Saying, 'I will return after bathing in the river,' he went to the river">&nbsp; । &nbsp; </span>
           <br /> <br />
           <span class="tooltip-container hover-text" data-tooltip=" after a long time">बहुकालानन्तरम्</span>
           <span class="tooltip-container hover-text" data-tooltip=" even">अपि</span>
           <span class="tooltip-container hover-text" data-tooltip=" Durvasa">दूर्वासाः</span>
           <span class="tooltip-container hover-text" data-tooltip=" not">न</span>
           <span class="tooltip-container hover-text" data-tooltip=" had returned">प्रत्यागतवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Even after a long time, Durvasa did not return"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Even after a long time, Durvasa did not return">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" the auspicious time">"शुभमुहूर्तः</span>
           <span class="tooltip-container hover-text" data-tooltip=" as long as">यावत्</span>
@@ -240,7 +263,7 @@
           <span class="tooltip-container hover-text" data-tooltip=" sages">मुनयः</span>
           <span class="tooltip-container hover-text" data-tooltip=" guests">अतिथयः</span>
           <span class="tooltip-container hover-text" data-tooltip=" and">च</span>
-          <span class="tooltip-container hover-text" data-tooltip=" The sages and guests said, 'The fast must be concluded before the auspicious time passes'"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" The sages and guests said, 'The fast must be concluded before the auspicious time passes'">&nbsp; । &nbsp; </span>
 
 
           <span class="tooltip-container hover-text" data-tooltip=" of elders">गुरूणाम्</span>
@@ -252,13 +275,13 @@
           <span class="tooltip-container hover-text" data-tooltip=" holy water">तीर्थं</span>
           <span class="tooltip-container hover-text" data-tooltip=" took">स्वीकृतवान्</span>
           <span class="tooltip-container hover-text" data-tooltip=" According to the instructions of the gurus,
-            Ambarisha symbolically took a sip of sacred water in order to conclude his fasting vow"> ।</span>
+            Ambarisha symbolically took a sip of sacred water in order to conclude his fasting vow">&nbsp; । &nbsp; </span>
           <br /> <br />
           <span class="tooltip-container hover-text" data-tooltip=" at that time">तत्समये</span>
           <span class="tooltip-container hover-text" data-tooltip=" Durvasa">दुर्वासाः</span>
           <span class="tooltip-container hover-text" data-tooltip=" there">तत्र</span>
           <span class="tooltip-container hover-text" data-tooltip=" came">आगतवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" At that moment, Durvasa arrived there"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" At that moment, Durvasa arrived there">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" all that is happening">प्रवृत्तं सर्वं</span>
           <span class="tooltip-container hover-text" data-tooltip=" having seen">दृष्ट्वा</span>
@@ -279,25 +302,25 @@
           <span class="tooltip-container hover-text" data-tooltip=" the ground">भूमिं</span>
           <span class="tooltip-container hover-text" data-tooltip=" struck">ताडितवान्</span>
           <span class="tooltip-container hover-text" data-tooltip=" Seeing everything that had taken place, he became very angry and said,
-            'You ended your fast before my arrival, you have dishonored me!' Saying this, he struck the ground with his matted hair"> ।</span>
+            'You ended your fast before my arrival, you have dishonored me!' Saying this, he struck the ground with his matted hair">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" then">तदा</span>
           <span class="tooltip-container hover-text" data-tooltip=" there">तत्र</span>
           <span class="tooltip-container hover-text" data-tooltip=" a certain">कश्चन</span>
           <span class="tooltip-container hover-text" data-tooltip=" demon">राक्षसः</span>
           <span class="tooltip-container hover-text" data-tooltip=" arose">उत्पन्नः</span>
-          <span class="tooltip-container hover-text" data-tooltip=" At that moment, a demon emerged"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" At that moment, a demon emerged">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" that demon">सः राक्षसः</span>
           <span class="tooltip-container hover-text" data-tooltip=" Ambarisha">अम्बरीषं</span>
           <span class="tooltip-container hover-text" data-tooltip=" to kill">मारयितुम्</span>
           <span class="tooltip-container hover-text" data-tooltip=" ready / attempting">उध्युत्तः</span>
-          <span class="tooltip-container hover-text" data-tooltip=" That demon tried to kill Ambarisha"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" That demon tried to kill Ambarisha">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" Ambarisha">अम्बरीषः</span>
           <span class="tooltip-container hover-text" data-tooltip=" Vishnu's discus">विष्णुचक्रं</span>
           <span class="tooltip-container hover-text" data-tooltip=" remembered">स्मृतवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Ambarisha remembered Lord Vishnu’s discus"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Ambarisha remembered Lord Vishnu’s discus">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" then">तदा</span>
           <span class="tooltip-container hover-text" data-tooltip=" in an instant">अपरक्षणे</span>
@@ -306,20 +329,20 @@
           <span class="tooltip-container hover-text" data-tooltip=" having slain">मारयित्वा</span>
           <span class="tooltip-container hover-text" data-tooltip=" near Durvasa">दुर्वाससः समीपम्</span>
           <span class="tooltip-container hover-text" data-tooltip=" came">आगच्छत्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Instantly, the discus destroyed the demon and turned toward Durvasa"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Instantly, the discus destroyed the demon and turned toward Durvasa">&nbsp; । &nbsp; </span>
           <br /> <br />
           <span class="tooltip-container hover-text" data-tooltip=" because of this">एतेन</span>
           <span class="tooltip-container hover-text" data-tooltip=" Durvasa got frightened">दुर्वासाः भीतः</span>
           <span class="tooltip-container hover-text" data-tooltip=" running">धावन्</span>
           <span class="tooltip-container hover-text" data-tooltip=" near Indra">देवेन्द्रसमीपं</span>
           <span class="tooltip-container hover-text" data-tooltip=" went">गतवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Frightened, Durvasa ran to Indra for protection"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Frightened, Durvasa ran to Indra for protection">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" Indra">देवेन्द्रः</span>
           <span class="tooltip-container hover-text" data-tooltip=" regarding this">एतद्विषये</span>
           <span class="tooltip-container hover-text" data-tooltip=" helplessness">असहायकतां</span>
           <span class="tooltip-container hover-text" data-tooltip=" expressed">प्रकटीकृतवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Indra expressed his inability to help in this matter"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Indra expressed his inability to help in this matter">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" from there">ततः</span>
           <span class="tooltip-container hover-text" data-tooltip=" running">धावितः</span>
@@ -332,13 +355,13 @@
           <span class="tooltip-container hover-text" data-tooltip=" near Shiva">शिवसमीपं</span>
           <span class="tooltip-container hover-text" data-tooltip=" went">गतवान्</span>
           <span class="tooltip-container hover-text" data-tooltip=" From there Durvasa went running to Brahma but disappointed,
-            again ran near Shiva"> ।</span>
+            again ran near Shiva">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" Shiva">शिवः</span>
           <span class="tooltip-container hover-text" data-tooltip=" also">अपि</span>
           <span class="tooltip-container hover-text" data-tooltip=" in granting protection">रक्षणदाने</span>
           <span class="tooltip-container hover-text" data-tooltip=" helpless">असहायः</span>
-          <span class="tooltip-container hover-text" data-tooltip=" But Shiva was also helpless in granting protection"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" But Shiva was also helpless in granting protection">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" finally">अन्ते</span>
           <span class="tooltip-container hover-text" data-tooltip=" Durvasa">दुर्वासाः</span>
@@ -347,7 +370,7 @@
           <span class="tooltip-container hover-text" data-tooltip=" to Vishnu’s feet">विष्णुपादौ</span>
           <span class="tooltip-container hover-text" data-tooltip=" refuge">शरणं</span>
           <span class="tooltip-container hover-text" data-tooltip=" went">गतवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Finally, Durvasa having reached Vaikunta surrendered at the feet of Lord Vishnu"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Finally, Durvasa having reached Vaikunta surrendered at the feet of Lord Vishnu">&nbsp; । &nbsp; </span>
           <br /> <br />
           <span class="tooltip-container hover-text" data-tooltip=" Vishnu">विष्णुः</span>
           <span class="tooltip-container hover-text" data-tooltip=" gentle smile">मन्दहासं</span>
@@ -357,7 +380,7 @@
           <span class="tooltip-container hover-text" data-tooltip=" Ambarisha's">अम्बरीषस्य</span>
           <span class="tooltip-container hover-text" data-tooltip=" under the control">अधीनः</span>
           <span class="tooltip-container hover-text" data-tooltip=" With a gentle smile, Vishnu said 'Sudarshana Chakra
-            is under the control of Ambarisha'"> ।</span>
+            is under the control of Ambarisha'">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" of the Sudarshana Chakra">सुदर्शनचक्रस्य</span>
           <span class="tooltip-container hover-text" data-tooltip=" function">कार्यं</span>
@@ -365,7 +388,7 @@
           <span class="tooltip-container hover-text" data-tooltip=" I">अहम्</span>
           <span class="tooltip-container hover-text" data-tooltip=" even">अपि</span>
           <span class="tooltip-container hover-text" data-tooltip=" incapable">अशक्तः</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Even I am incapable of stopping the action of the Sudarshana Chakra"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Even I am incapable of stopping the action of the Sudarshana Chakra">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" therefore">अतः</span>
           <span class="tooltip-container hover-text" data-tooltip=" you">भवान्</span>
@@ -374,31 +397,33 @@
           <span class="tooltip-container hover-text" data-tooltip=" refuge">शरणं</span>
           <span class="tooltip-container hover-text" data-tooltip=" may seek">प्रार्थयतु "</span>
           <span class="tooltip-container hover-text" data-tooltip=" thus">इति</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Therefore, you must go and seek refuge in Ambarisha himself"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Therefore, you must go and seek refuge in Ambarisha himself">&nbsp; । &nbsp; </span>
 
           <br /> <br />
           <span class="tooltip-container hover-text" data-tooltip=" with no other option">अनन्योपायः</span>
           <span class="tooltip-container hover-text" data-tooltip=" Durvasa">दूर्वासाः</span>
-          <span class="tooltip-container hover-text" data-tooltip=" to Ambarisha">अम्बरीषसमीपं</span>
+          <span class="tooltip-container hover-text" data-tooltip=" near Ambarisha">अम्बरीषसमीपं</span>
           <span class="tooltip-container hover-text" data-tooltip=" having gone">गत्वा</span>
           <span class="tooltip-container hover-text" data-tooltip=" forgiveness">क्षमां</span>
           <span class="tooltip-container hover-text" data-tooltip=" sought">प्रार्थितवान्</span>
           <span class="tooltip-container hover-text" data-tooltip=" With no other option, Durvasa having gone to Ambarisha
-            sought his forgiveness"> ।</span>
+            sought his forgiveness">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" Ambarisha">अम्बरीषः</span>
           <span class="tooltip-container hover-text" data-tooltip=" Vishnu">विष्णुं</span>
           <span class="tooltip-container hover-text" data-tooltip=" remembering">स्मरन्</span>
           <span class="tooltip-container hover-text" data-tooltip=" discus">चक्रं</span>
           <span class="tooltip-container hover-text" data-tooltip=" took back">प्रतिस्वीकृतवान्</span>
-          <span class="tooltip-container hover-text" data-tooltip=" Remembering Vishnu, Ambarisha recalled the discus"> ।</span>
+          <span class="tooltip-container hover-text" data-tooltip=" Remembering Vishnu, Ambarisha recalled the discus">&nbsp; । &nbsp; </span>
 
           <span class="tooltip-container hover-text" data-tooltip=" Durvasa">दुर्वाससं</span>
           <span class="tooltip-container hover-text" data-tooltip=" with respectful hospitality">आदरातिथ्येन</span>
           <span class="tooltip-container hover-text" data-tooltip=" honored">सत्कृतवान्</span>
           <span class="tooltip-container hover-text" data-tooltip=" and">च</span>
-          <span class="tooltip-container hover-text" data-tooltip=" He then respectfully welcomed and honored Durvasa"> ।</span>
-          <br /> <br /> <br /> <br />
+          <span class="tooltip-container hover-text" data-tooltip=" He then respectfully welcomed and honored Durvasa">&nbsp; । &nbsp; </span>
+          <br /> <br />
+
+          <br /> <br />
           <br /> <br /> <br /> <br />
         </div>
         <!-- class="devanagari" -->
@@ -420,5 +445,6 @@
 
     <script src="../../../scripts/tooltip.js"></script>
     <script src="../../../scripts/settings.js"></script>
+    <script src="../../../scripts/playaudio.js"></script>
   </body>
 </html>

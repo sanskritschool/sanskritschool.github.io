@@ -154,13 +154,49 @@
       -->
       <!-- end language links -->
 
+      <!-- General-purpose modal dialog -->
+      <div id="modal-dialog" class="modal hidden">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <div id="modal-message">This is a modal message</div>
+          <button onclick="closeModal()">OK</button>
+        </div>
+      </div>
+
+      <!-- Yes/No dialog -->
+      <div id="yesno-dialog" class="modal hidden">
+        <div class="modal-content">
+          <div id="yesno-message">Are you sure?</div>
+          <div class="dialog-buttons">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+          </div>
+        </div>
+      </div>
+
       <div class="alt-lang">
         <h3>Select vocabulary <br /></h3>
         <ol class="my-ol">
           <li class="num-list">
+            <div style="display: flex; align-items: center;">
+              <a class="a-no-deco" href="#" onclick="handleDifficultWordsClick(event)">
+                My difficult words (<span id="difficult-word-count">0</span>)
+              </a>
+              <img
+                src="../images/icons/delete.png"
+                alt="Delete"
+                title="Clear difficult words"
+                style="cursor: pointer; width: 18px; height: 18px; margin-left: 8px;"
+                onclick="handleDeleteDifficultWords()"
+              />
+            </div>
+          </li>
+
+          <li class="num-list">
             <a class="a-no-deco" href="picture_vocab.html">Picture vocabulary</a>
           </li>
         </ol>
+
       </div> <!-- <div class="alt-lang"> -->
 
       <!-- <div class="content"> -->
@@ -178,5 +214,38 @@
     </footer>
     <!-- end Footer -->
     <script src="../scripts/settings.js"></script>
+
+    <script type="module">
+      import { getDifficultWordCount, clearDifficultWords } from '/scripts/difficult_words_db.js';
+      import { showModal, showYesNoDialog } from '/scripts/modal_utils.js';
+
+      async function handleDifficultWordsClick(event) {
+        event.preventDefault();
+        const count = await getDifficultWordCount();
+        if (count >= 10) {
+          window.location.href = "my_difficult_words_quiz.html";
+        } else {
+          showModal("'My difficult words' is empty  or has fewer than 10 words. When you take a quiz and get some answers wrong, those words get added to 'My difficult words'. I need at least 10 words to quiz you");
+        }
+      }
+
+      async function handleDeleteDifficultWords() {
+        showYesNoDialog(
+          "Are you sure you want to delete 'My difficult words'?",
+          async () => {
+            await clearDifficultWords();
+            document.getElementById("difficult-word-count").textContent = "0";
+          }
+        );
+      }
+
+      window.handleDifficultWordsClick = handleDifficultWordsClick;
+      window.handleDeleteDifficultWords = handleDeleteDifficultWords;
+
+      getDifficultWordCount().then((count) => {
+        document.getElementById("difficult-word-count").textContent = count;
+      });
+    </script>
+
   </body>
 </html>

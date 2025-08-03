@@ -1,0 +1,30 @@
+.custom-audio-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 600px;
+  background-color: #f0f0f0;   /* light gray background */
+  padding: 10px;               /* optional: inner spacing */
+  border-radius: 8px;          /* optional: rounded corners */
+}
+
+#play-pause-btn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+#progress-bar {
+  flex: 1;
+  height: 6px;
+  cursor: pointer;
+}
+
+#current-time,
+#duration {
+  font-family: monospace;
+  font-size: 14px;
+  min-width: 40px;
+  text-align: center;
+}
