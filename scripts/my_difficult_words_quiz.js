@@ -4,7 +4,7 @@ import { getAllDifficultWords } from '/scripts/difficult_words_db.js';
 
 let quizData = [];
 
-const modeSelect = document.getElementById("mode-select");
+const modeSelect = document.getElementById("mode-select-mdw");
 const questionText = document.getElementById("question-text");
 const optionsForm = document.getElementById("options-form");
 const submitBtn = document.getElementById("submit-btn");
