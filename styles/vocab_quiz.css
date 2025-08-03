@@ -66,7 +66,7 @@
 .quiz-container .options label {
   display: flex;
   align-items: center;
-  gap: 20px; /* sets space between two btns, and b/w btn and text */
+  gap: 10px 10px; /* 20px sets space between two btns, and b/w btn and text */
 }
 
 .quiz-container #feedback {
@@ -141,17 +141,6 @@
   box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
 }
 
-/*
-#start-select, #end-select {
-  width: 60px;
-}
-*/
-
-/*
-#span-range-select {
-  margin: 0px 0px 0px 10px;
-}
-*/
 #label-range-select {
   font-family: 'sans-serif';
   font-size: 20px;
@@ -180,6 +169,19 @@
   #mode-select {
     flex-basis: 100%;
   }
+}
+
+#options-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Adjust this to set spacing between radio buttons */
+}
+
+#submit-btn, #skip-btn {
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid gray;
 }
 
 /*
