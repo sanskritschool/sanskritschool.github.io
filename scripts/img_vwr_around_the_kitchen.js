@@ -3,47 +3,137 @@ let images = [
   {
     src: "../images/vocab/kitchen/kitchen.png",
     caption: "पाकशाला ● स्त्रीलिङ्ग ● पाक",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/kitchen.m4a",
   },
   {
     src: "../images/vocab/kitchen/knife.png",
     caption: "छुरिका ● स्त्रीलिङ्ग ● छुरिका",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/knife.m4a",
   },
   {
     src: "../images/vocab/kitchen/plate.png",
     caption: "स्थालिका ● स्त्रीलिङ्ग ● स्थालि",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/plate.m4a",
   },
   {
     src: "../images/vocab/kitchen/spoon.png",
     caption: "चमसः ● पुल्लिङ्ग ● चमस",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/spoon.m4a",
   },
   {
     src: "../images/vocab/kitchen/water_glass.png",
     caption: "चषकः ● पुल्लिङ्ग ● चषक",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/water_glass.m4a",
   },
   {
     src: "../images/vocab/kitchen/vessel.png",
     caption: "पात्रम् ● नपुंसकलिङ्ग ● पात्र",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/vessel.m4a",
   },
   {
     src: "../images/vocab/kitchen/rolling_pin.png",
     caption: "वेल्लनम् ● नपुंसकलिङ्गम् ● वल्",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/rolling_pin.m4a",
   },
   {
     src: "../images/vocab/kitchen/stove.png",
     caption: "चूलिका ● स्त्रीलिङ्गम् ● चूलि",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/stove.m4a",
   },
   {
     src: "../images/vocab/kitchen/bowl.png",
     caption: "कटोरा ● स्त्रीलिङ्गम् ● कटक",
-    audio: "../images/vocab/kitchen/bell.mp3",
+    audio: "/audio/pic_dict/kitchen/bowl.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/apron.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/apron.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/cupboard.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/cupboard.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/female_chef.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/female_chef.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/fridge.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/fridge.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/frying_pan.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/frying_pan.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/grater.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/grater.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/kitchen_sink.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/kitchen_sink.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/ladle.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/ladle.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/male_chef.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/male_chef.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/measuring_cups.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/measuring_cups.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/strainer.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/strainer.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/tong.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/tong.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/water_pitcher.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/water_pitcher.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/blender.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/blender.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/cutting_board.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/cutting_board.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/napkin.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/napkin.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/fire_extinguisher.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/fire_extinguisher.m4a",
+  },
+  {
+    src: "../images/vocab/kitchen/peeler.png",
+    caption: "TODO ● TODO ● TODO",
+    audio: "/audio/pic_dict/kitchen/peeler.m4a",
   },
 ];
 

@@ -125,7 +125,7 @@
   border: 1px solid #ccc;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-bottom: 15px;
+  margin-bottom: 0px; /* was 15px */
   cursor: pointer;
   height: 30px;
 }

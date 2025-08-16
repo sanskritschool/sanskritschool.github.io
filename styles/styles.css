@@ -613,7 +613,7 @@ h3 {
   align-items: center;       /* Align items vertically */
   justify-content: space-between;  /* Or use 'flex-start' if you want them close */
   gap: 20px;                 /* Optional spacing between elements */
-  margin-bottom: 10px;       /* Optional spacing below the bar */
+  margin-bottom: 15px;       /* Optional spacing below the bar */
 }
 
 .title-bar h3 {
