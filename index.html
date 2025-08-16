@@ -149,6 +149,10 @@
       -->
       <!-- end language links -->
 
+      <div id="css-resolution"></div>
+      <div id="physical-resolution"></div>
+      <br />
+
       <div class="alt-lang">
         <h3>This website is under development!</h3>
         <br />
@@ -272,5 +276,28 @@
 
     <script src="scripts/settings.js"></script>
 
+    <script>
+      function updateResolution() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const dpr = window.devicePixelRatio;
+
+  const physicalWidth = Math.round(width * dpr);
+  const physicalHeight = Math.round(height * dpr);
+
+  document.getElementById("css-resolution").textContent =
+    `CSS Res: ${width} × ${height} (DPR: ${dpr})`;
+
+  document.getElementById("physical-resolution").textContent =
+    `Phy Res: ${physicalWidth} × ${physicalHeight}`;
+}
+
+// Run on load
+updateResolution();
+
+// Update when the window is resized or orientation changes
+window.addEventListener("resize", updateResolution);
+window.addEventListener("orientationchange", updateResolution);
+    </script>
   </body>
 </html>

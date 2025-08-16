@@ -141,23 +141,32 @@ body {
   color: #f4a261;
 }
 
-/*** vert menu ***/
-.sk-vert-menu {
-  position: absolute; /* Take it out of normal flow */
-  top: 60px; /* Adjust as needed */
-  left: 0px; /* Adjust as needed */
-  width: 100%;
-  height: calc(100vh - 60px);
-  /*background-color: rgba(0, 0, 0, 0.7); Semi-transparent background */
-  /*background-color: rgb(129, 165, 177);*/
+/* vertical menu */
+#sk-vert-menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  /*height: calc(100vh - 60px);*/
+  height: calc(80vh - 60px);
+  width: 250px; /*100%;*/
   background-color: white;
-  color: white;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  z-index: 1000; /* Ensure it is on top */
-  display: none; /* Hidden initially */
+  transform: translateX(-100%); /* start hidden off screen */
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;             /* allow scrolling if too long */
+
+    /* border & shadow */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* when menu is open */
+#sk-vert-menu.open {
+  transform: translateX(0);
 }
 
 .link-container {
@@ -205,9 +214,11 @@ a.sk-vert-menu-item {
   display: flex;
 }
 
+/*
 #sk-vert-menu {
   display: none;
 }
+*/
 
 /*** end vert menu ***/
 
@@ -335,9 +346,11 @@ h3 {
     display: block;
   }
 
+  /*
   .sk-vert-menu {
     display: none;
   }
+  */
 }
 
 .my-ul, .my-ol {

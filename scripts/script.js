@@ -10,10 +10,13 @@ window.addEventListener("resize", function () {
 
 function toggleOverlay() {
   const overlay = document.getElementById("sk-vert-menu");
-  if (overlay.style.display === "none" || overlay.style.display === "") {
-    overlay.style.display = "flex"; // Display as a flex container
-  } else {
-    overlay.style.display = "none"; // Hide again
+  overlay.classList.toggle("open");
+}
+
+function resize() {
+  const overlay = document.getElementById("sk-vert-menu");
+  if (window.innerWidth > 768) {
+    overlay.classList.remove("open");
   }
 }
 
@@ -59,3 +62,4 @@ function showYesNoDialog(message, onYes, onNo) {
 
   dialog.classList.remove("hidden");
 }
+
