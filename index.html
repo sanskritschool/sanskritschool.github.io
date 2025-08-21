@@ -149,9 +149,16 @@
       -->
       <!-- end language links -->
 
+      <!--
       <div id="css-resolution"></div>
       <div id="physical-resolution"></div>
-      <br />
+      -->
+
+      <!-- Floating warning banner -->
+      <div id="resolution-warning">
+        <span id="resolution-text"></span>
+        <button id="resolution-close">×</button>
+      </div>
 
       <div class="alt-lang">
         <h3>This website is under development!</h3>
@@ -277,7 +284,7 @@
     <script src="scripts/settings.js"></script>
 
     <script>
-      function updateResolution() {
+function updateResolution() {
   const width = window.innerWidth;
   const height = window.innerHeight;
   const dpr = window.devicePixelRatio;
@@ -285,12 +292,30 @@
   const physicalWidth = Math.round(width * dpr);
   const physicalHeight = Math.round(height * dpr);
 
+  /*
   document.getElementById("css-resolution").textContent =
     `CSS Res: ${width} × ${height} (DPR: ${dpr})`;
 
   document.getElementById("physical-resolution").textContent =
     `Phy Res: ${physicalWidth} × ${physicalHeight}`;
+  */
+
+  const warningDiv = document.getElementById("resolution-warning");
+  const warningText = document.getElementById("resolution-text");
+
+  if (width <= 350) {
+    warningText.textContent =
+      "Your phone's horizontal screen resolution is too low. Our website will not work properly on this phone";
+    warningDiv.classList.add("show");
+  } else {
+    warningDiv.classList.remove("show");
+  }
 }
+
+// Close button handler
+document.getElementById("resolution-close").addEventListener("click", () => {
+  document.getElementById("resolution-warning").style.display = "none";
+});
 
 // Run on load
 updateResolution();
@@ -298,6 +323,7 @@ updateResolution();
 // Update when the window is resized or orientation changes
 window.addEventListener("resize", updateResolution);
 window.addEventListener("orientationchange", updateResolution);
-    </script>
+
+</script>
   </body>
 </html>

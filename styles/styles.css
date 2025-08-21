@@ -691,3 +691,38 @@ h3 {
   justify-content: space-around;
 }
 
+#resolution-warning {
+  position: fixed;
+  top: 60px;              /* below your logo */
+  left: 0;
+  width: 100%;
+  background: #e8e8e8;
+  color: #000;
+  padding: 10px 40px 10px 10px;
+  text-align: center;
+  z-index: 2000;
+  border: 1px solid gray;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+  /* animation prep */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+#resolution-warning.show {
+  max-height: 200px;  /* large enough for content */
+  opacity: 1;
+}
+
+#resolution-warning button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}

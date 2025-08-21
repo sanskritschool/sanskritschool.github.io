@@ -1,3 +1,21 @@
+
+1. when we get 10.10 in quiz, say congrats
+2. give an example on how to click on end of sentene chinna
+3, In quiz, wrong answer highlight the correct answer
+4. wordwall
+5. learning apps
+6. in pic dict, explain meaning in native lang
+7. in gita, use devanagari instead of english for verse numbrer
+8. vivekachudamani shuld be consistent
+9. all url links should be highted
+10. circa should be ca.
+11. add more pics in shankara bio
+12. split verse,original verse should be inbold
+13. spoken audio file for scriptures
+14. change contact us text
+15. change pic in brief history, maybe nalanda university
+
+
 to start webserver: type 'webserver'
 
 devanagari fonts:
