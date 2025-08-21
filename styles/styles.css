@@ -699,7 +699,7 @@ h3 {
   background: #e8e8e8;
   color: #000;
   padding: 10px 40px 10px 10px;
-  text-align: center;
+  text-align: left;
   z-index: 2000;
   border: 1px solid gray;
   border-radius: 0 0 8px 8px;
@@ -713,7 +713,7 @@ h3 {
 }
 
 #resolution-warning.show {
-  max-height: 200px;  /* large enough for content */
+  max-height: 300px;  /* large enough for content */
   opacity: 1;
 }
 
