@@ -1,29 +1,20 @@
+// Close vertical menu if resizing above mobile breakpoint
 window.addEventListener("resize", function () {
   const overlay = document.getElementById("sk-vert-menu");
   const hamburger = document.getElementById("hamburger");
 
   if (window.innerWidth > 768) {
-    overlay.style.display = "none"; // Hide vertical menu
-    hamburger.classList.remove("open"); // Reset hamburger icon
+    overlay.classList.remove("open");
+    hamburger.classList.remove("open");
   }
 });
 
-function toggleOverlay() {
-  const overlay = document.getElementById("sk-vert-menu");
-  overlay.classList.toggle("open");
-}
-
-function resize() {
-  const overlay = document.getElementById("sk-vert-menu");
-  if (window.innerWidth > 768) {
-    overlay.classList.remove("open");
-  }
-}
-
+// Toggle the vertical menu + hamburger icon
 function toggleHamburger() {
-  toggleOverlay();
-
+  const overlay = document.getElementById("sk-vert-menu");
   const button = document.getElementById("hamburger");
+
+  overlay.classList.toggle("open");
   button.classList.toggle("open");
 }
 
@@ -49,7 +40,6 @@ function showYesNoDialog(message, onYes, onNo) {
   const yesBtn = document.getElementById("yes-btn");
   const noBtn = document.getElementById("no-btn");
 
-  // Remove old handlers first
   yesBtn.onclick = () => {
     dialog.classList.add("hidden");
     onYes && onYes();
@@ -62,4 +52,3 @@ function showYesNoDialog(message, onYes, onNo) {
 
   dialog.classList.remove("hidden");
 }
-
