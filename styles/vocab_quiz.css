@@ -1,11 +1,17 @@
 .quiz-container {
-  max-width: 500px;
+  /* max-width: 500px; */
   padding: 0px 10px 10px 10px; /* was 1rem */
   /*
   border: 1px solid #ccc;
   border-radius: 1rem;
   background: #f9f9f9; */
   font-family: sans-serif;
+}
+
+#question-text {
+  max-width: 700px;
+  line-height: 1.0;
+  margin-bottom: 10px;
 }
 
 .quiz-container .question-block {
@@ -32,6 +38,7 @@
   gap: 0.5rem;
   border: 1px solid #ccc;
   font-size: 16px;
+  max-width: 418px;
 }
 
 .quiz-container .score-label,
@@ -103,6 +110,7 @@
   margin-bottom: 15px;
   cursor: pointer;
   height: 30px;
+  max-width: 418px;
 }
 
 /* Optional: customize when hovered or focused */
