@@ -103,6 +103,12 @@ body {
   /*gap: 10px;*/
 }
 
+/* logo size (desktop/tablet) */
+.left-group img {
+  height: 50px;
+  width: auto;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -344,6 +350,11 @@ h3 {
 
   .hamburger-btn {
     display: block;
+  }
+
+  /* smaller logo on small screens */
+  .left-group img {
+    height: 30px;
   }
 
   /*
