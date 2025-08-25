@@ -354,7 +354,7 @@ h3 {
 
   /* smaller logo on small screens */
   .left-group img {
-    height: 30px;
+    height: 40px; /* was 30px */
   }
 
   /*
