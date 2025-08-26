@@ -737,3 +737,22 @@ h3 {
   font-size: 20px;
   cursor: pointer;
 }
+
+.simple-audio-player {
+  display: flex;
+  justify-content: space-between; /* sentence left, button right */
+  align-items: center;            /* vertical alignment */
+  /*margin-bottom: 12px;            /* spacing between rows */
+}
+
+.sentence {
+  flex: 1;                        /* take up remaining space */
+  margin-right: 10px;             /* gap between sentence and button */
+}
+
+/* button for simple audio player */
+.simple-play-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
