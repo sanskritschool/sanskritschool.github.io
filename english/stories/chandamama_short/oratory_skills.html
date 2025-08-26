@@ -13,14 +13,14 @@
     <!-- End Google tag (gtag.js) -->
 
     <!-- SEO tags -->
-    <title>Sanskrit story | Online Lessons Quizzes Vocabulary Stories and much more</title>
+    <title>Sanskrit story Oratory skills | Online Lessons Quizzes Vocabulary Stories and much more</title>
     <meta name="description" content="Master Sanskrit easily. Perfect for beginners and advanced learners">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.saralasamskrutam.com/english/stories/chandamama_short/oratory_skills.html">
 
     <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="Sanskrit story | Online Lessons & Quizzes">
+    <meta property="og:title" content="Sanskrit story oratory skills | Online Lessons & Quizzes">
     <meta property="og:description" content="Master Sanskrit easily. Perfect for beginners and advanced learners">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.saralasamskrutam.com/english/stories/chandamama_short/oratory_skills.html">
@@ -28,7 +28,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sanskrit story. Perfect for beginners and advanced learners">
+    <meta name="twitter:title" content="Sanskrit story oratory skills. Perfect for beginners and advanced learners">
     <meta name="twitter:description" content="Stories, vocabulary, quizzes and scriptures to help you master Sanskrit">
     <meta name="twitter:image" content="https://www.saralasamskrutam.com/images/sarala_samskrutam.png">
 
@@ -60,6 +60,7 @@
     <!-- end fonts hosted by me -->
 
     <link rel="stylesheet" href="../../../styles/styles.css" />
+    <link rel="stylesheet" href="../../../styles/audio_player.css" />
     <script src="../../../scripts/script.js"></script>
   </head>
   <body>
@@ -158,12 +159,33 @@
       -->
       <!-- end language links -->
 
+      <table border="0">
+        <tr>
+          <td class="table-audio-quiz">वाक्चातुर्यम्</td>
+          <td class="table-audio-quiz">Oratory skills</td>
+          <td class="table-audio-quiz">
+            <span class="ss-tooltip">
+              <a href="quiz_html/oratory_skills_quiz.html">
+                <img src="../../../images/icons/quiz.png" alt="Quiz" width="30">
+              </a>
+              <span class="ss-tooltip-text">Vocabulary quiz</span>
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <div class="custom-audio-player">
+        <img id="play-pause-btn" src="../../../images/icons/play_audio.png" alt="Play" />
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" step="1" />
+        <span id="duration">0:00</span>
+      </div>
+
+      <audio id="story-audio" src="../../../audio/stories/oratory_skills.mp4"></audio>
       <div id="tooltips-container">
         <div class="sanskrit">
           <br />
-          <div class="colored-heading">वाक्चातुर्यम्  &nbsp; Oratory skills</div>
-          <br />
-            <span class="tooltip-container hover-text" data-tooltip=" Devarāja">देवराजः</span>
+             <span class="tooltip-container hover-text" data-tooltip=" Devarāja">देवराजः</span>
             <span class="tooltip-container hover-text" data-tooltip=" once">कदाचित्</span>
             <span class="tooltip-container hover-text" data-tooltip=" for the purpose of business/work">कार्यनिमित्तं</span>
             <span class="tooltip-container hover-text" data-tooltip=" city">नगरं</span>
@@ -286,9 +308,6 @@
             <span class="tooltip-container hover-text" data-tooltip=" bought">क्रीतवान्</span>
             <span class="tooltip-container hover-text" data-tooltip=" Impressed by the shopkeeper’s eloquence, Devarāja gave him money and purchased the shawl">।</span>
           <br /> <br />
-          <div class="alt-lang">
-            <a href="oratory_skills_quiz.html">Vocabulary quiz</a>
-          </div>
           <br /> <br />
         </div>
         <!-- class="devanagari" -->
@@ -310,5 +329,6 @@
 
     <script src="../../../scripts/tooltip.js"></script>
     <script src="../../../scripts/settings.js"></script>
+    <script src="../../../scripts/playaudio.js"></script>
   </body>
 </html>

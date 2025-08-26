@@ -28,7 +28,7 @@ let wrongCount = 0;
 
 function updateQuizTitle() {
   const wordCount = quizData.length;
-  quizTitle.textContent = `Ambarishaha quiz (${wordCount} words)`;
+  quizTitle.textContent = `(${wordCount} words)`;
 }
 
 function shuffleArray(array) {
