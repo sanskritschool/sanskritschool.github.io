@@ -60,6 +60,7 @@
     <!-- end fonts hosted by me -->
 
     <link rel="stylesheet" href="../../../styles/styles.css" />
+    <link rel="stylesheet" href="../../../styles/audio_player.css" />
     <script src="../../../scripts/script.js"></script>
   </head>
   <body>
@@ -158,10 +159,32 @@
       -->
       <!-- end language links -->
 
+      <table border="0">
+        <tr>
+          <td class="table-audio-quiz">ज्ञानोदयः</td>
+          <td class="table-audio-quiz">The rise of wisdom</td>
+          <td class="table-audio-quiz">
+            <span class="ss-tooltip">
+              <a href="quiz_html/rise_of_wisdom_quiz.html">
+                <img src="../../../images/icons/quiz.png" alt="Quiz" width="30">
+              </a>
+              <span class="ss-tooltip-text">Vocabulary quiz</span>
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <div class="custom-audio-player">
+        <img id="play-pause-btn" src="../../../images/icons/play_audio.png" alt="Play" />
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" step="1" />
+        <span id="duration">0:00</span>
+      </div>
+
+      <audio id="story-audio" src="../../../audio/stories/rise_of_wisdom.mp4"></audio>
+
       <div id="tooltips-container">
         <div class="sanskrit">
-          <br />
-          <div class="colored-heading">ज्ञानोदयः  &nbsp; The rise of wisdom</div>
           <br />
             <span class="tooltip-container hover-text" data-tooltip=" Chitrapura's">चित्रपुरस्य</span>
             <span class="tooltip-container hover-text" data-tooltip=" king">राजा</span>
@@ -338,5 +361,6 @@
 
     <script src="../../../scripts/tooltip.js"></script>
     <script src="../../../scripts/settings.js"></script>
+    <script src="../../../scripts/playaudio.js"></script>
   </body>
 </html>

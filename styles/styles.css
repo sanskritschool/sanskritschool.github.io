@@ -460,8 +460,9 @@ h3 {
 }
 
 .gita-grid-item {
-  background-color: #eff2f2; /* #f8f9f9 */
-  color: #34495e;
+  background-color: #eff2f2;
+  /*color: #34495e;*/
+  color: black;
   padding: 8px;
   text-align: left;
   border-radius: 8px;

@@ -60,6 +60,7 @@
     <!-- end fonts hosted by me -->
 
     <link rel="stylesheet" href="../../../styles/styles.css" />
+    <link rel="stylesheet" href="../../../styles/audio_player.css" />
     <script src="../../../scripts/script.js"></script>
   </head>
   <body>
@@ -158,11 +159,34 @@
       -->
       <!-- end language links -->
 
+      <table border="0">
+        <tr>
+          <td class="table-audio-quiz">प्रजाप्रतिनिधिः</td>
+          <td class="table-audio-quiz">People's representative</td>
+          <td class="table-audio-quiz">
+            <span class="ss-tooltip">
+              <a href="quiz_html/peoples_rep_quiz.html">
+                <img src="../../../images/icons/quiz.png" alt="Quiz" width="30">
+              </a>
+              <span class="ss-tooltip-text">Vocabulary quiz</span>
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <div class="custom-audio-player">
+        <img id="play-pause-btn" src="../../../images/icons/play_audio.png" alt="Play" />
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" step="1" />
+        <span id="duration">0:00</span>
+      </div>
+
+      <audio id="story-audio" src="../../../audio/stories/peoples_rep.mp4"></audio>
+
       <div id="tooltips-container">
         <div class="sanskrit">
-          <br />
-          <div class="colored-heading">प्रजाप्रतिनिधिः  &nbsp; People's representative</div>
-          <br />
+          <br/>
+
           <span class="tooltip-container hover-text" data-tooltip=" Nagapali">नागपाली</span>
           <span class="tooltip-container hover-text" data-tooltip=" well-provided / prosperous">सुसम्पन्नः</span>
           <span class="tooltip-container hover-text" data-tooltip=" village">ग्रामः</span> ।
@@ -328,5 +352,6 @@
 
     <script src="../../../scripts/tooltip.js"></script>
     <script src="../../../scripts/settings.js"></script>
+    <script src="../../../scripts/playaudio.js"></script>
   </body>
 </html>
