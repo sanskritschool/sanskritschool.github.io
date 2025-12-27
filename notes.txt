@@ -1,3 +1,8 @@
+website names:
+Madhuram
+sanskrit.now
+devabhasha.com
+
 Stories:
 Ambarisha - all, except audio
 Oratory skills - sentence review done
@@ -6,7 +11,8 @@ arrow's target: add sentence meaning
 rise of wisdom: add sentence meaning
 secret of wealth: add sentence meaning
 
-1. when we get 10.10 in quiz, say congrats
+0. when we get 10.10 in quiz, say congrats
+1. Need to support seeking when playing audio files
 2. give an example on how to click on end of sentene chinna
 3, In quiz, wrong answer highlight the correct answer
 4. wordwall
@@ -49,7 +55,28 @@ Do before next git add
 - is .sanskrit being applied to all lines? see secret_of_wealth.html
 Priya
 
+======
+HOW-TO
+======
 
+Input Google doc Gita chapter (e.g gita_ch01) and output html
+-------------------------------------------------------------
+cd /Users/lk/files/scripts/samskrut
+./parse_gita_verse $in_txt 1 > $out_txt
+In chapter_xx.html, paste contents of $out_txt after line '<!-- verses start there -->'
+
+Convert gita/chapter_xx.html to Vocabulary
+------------------------------------------
+grep 'data-tooltip' chapter_01.html > $in_txt
+./to_vocab_quiz.sh > $out_txt
+sort $out_txt > $out2_txt
+edit $out2_txt and delete all duplicates
+
+Create images for picture dictionary
+------------------------------------
+Download Icons or images from https://icons8.com/
+Download image from https://deepai.org/machine-learning-model/text2img
+Open in FireAlpaca, export to .jpg size 384x384
 
 Sandhi TODO
 - add reason why each sandhi is called thus
@@ -282,6 +309,31 @@ when you encounter । character, print it like this: ।: TODO
 
 display the following without sandhi. give word by word meaning in this
 format: sanskrit word: english word
+
+Vocabulary
+----------
+मद-अन्ध — maddened with rut (blind with rut-fluid)
+सिन्धुर — elephant
+स्फुरत् — trembling, moving, quivering
+त्वक् — hide, skin
+उत्तरीय — upper garment
+मेदुरे — fat, rich, massive; also “splendidly adorned”
+
+मनो — (my) mind
+विनोद — delight, joy
+अद्भुतम् — wonderful, amazing
+बिभर्तु — may it bear / may it bring
+भूत-भर्तरि — in the sustainer of beings (Śiva)
+  भूत — beings, creatures
+  भर्तरि — supporter, sustainer, lord
+
+भिन्न (भिन्न भिन्न) - different
+असमान        - different
+कृपणः         - stingy, miserly
+कस्मै          - to whom, for whom
+निसर्ग          - nature, natural
+निसर्गकोपः       - a storm, natural calamity
+आन्दोलयति      - moves, shakes, swings, agitates
 
 TODO
 - check min screen width
