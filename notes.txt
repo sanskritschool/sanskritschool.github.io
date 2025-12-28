@@ -67,11 +67,18 @@ In chapter_xx.html, paste contents of $out_txt after line '<!-- verses start the
 
 Convert gita/chapter_xx.html to Vocabulary
 ------------------------------------------
+new way (use this only)
+cd.w
+cd python
+p3 mk_gita_vocab.py
+
+--- do not use this ---
 cd.w; cd english/scriptures/gita
 grep 'data-tooltip' chapter_01.html > $in_txt
 $scripts/samskrut/to_vocab_quiz.sh > $out_txt
 sort $out_txt > $out2_txt
 edit $out2_txt and delete all duplicates
+--- end do not use this ---
 
 in chapter_01.html, after the line:
 <!-- end vertical menu -->
