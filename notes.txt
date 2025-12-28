@@ -67,10 +67,36 @@ In chapter_xx.html, paste contents of $out_txt after line '<!-- verses start the
 
 Convert gita/chapter_xx.html to Vocabulary
 ------------------------------------------
+cd.w; cd english/scriptures/gita
 grep 'data-tooltip' chapter_01.html > $in_txt
-./to_vocab_quiz.sh > $out_txt
+$scripts/samskrut/to_vocab_quiz.sh > $out_txt
 sort $out_txt > $out2_txt
 edit $out2_txt and delete all duplicates
+
+in chapter_01.html, after the line:
+<!-- end vertical menu -->
+add the following and edit it as required
+      <table border="0">
+        <tr>
+          <td class="table-audio-quiz">Chapter 1</td>
+          <td class="table-audio-quiz">अर्जुनविषादयोगः</td>
+          <td class="table-audio-quiz">
+            <span class="ss-tooltip">
+              <a href="quiz_html/chapter_01.html">
+                <img src="../../../images/icons/quiz.png" alt="Quiz" width="30">
+              </a>
+              <span class="ss-tooltip-text">Vocabulary quiz</span>
+            </span>
+          </td>
+        </tr>
+      </table>
+
+delete this below
+Chaper 1 अर्जुनविषादयोगः
+<br />
+
+Copy contents of $out2_txt to ../quiz_data/chapter_01_quiz_data.js
+Copy ../quiz_html/chapter_01.html and edit
 
 Create images for picture dictionary
 ------------------------------------
